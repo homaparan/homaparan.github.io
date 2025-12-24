@@ -7,7 +7,7 @@ show_sidebar: false
 hero_image: img/cmb.jpg
 ---
 
-Origins, evolution, and effects of the cosmic magnetic field on structure formation in the universe are among pressing questions in astrophysics and cosmology.  [School of Astronomy (SoA)](https://astro.ipm.ac.ir/) at [Institute of Research in Fundamental Sciences (IPM)](https://www.ipm.ir/) hosts researchers who are actively involved in both observational and theoretical studies of cosmic magnetism on various scales. For a better understanding of the subject it is very insightful to connect theoreticians with observers. The **Cosmic Magnetism Group (CMG)** is hence created to define collaborative projects.
+گروه هماپران دانش
 
 Cosmic Magnetism Group Meeting (CMGM) is the monthly meetings of the CMG to
 

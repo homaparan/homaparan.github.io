@@ -1,0 +1,69 @@
+#########################################
+- name: Meetings
+  link: /Meetings/archive
+#  dropdown:
+#    - name: 2024
+#      link: /archive/2024/
+#    - name: 2025
+#      link: /archive/2025/
+#########################################
+- name: Top-Navi
+  link: /Top_Navigation/
+#  dropdown:
+#    - name: 2022
+#      link: /2022/
+#########################################
+#- name: Presentations
+#  link: /presentations/
+#  dropdown:
+#    - name: 2022
+#      link: /2022/
+#########################################
+#- name: Journal Club
+#  link: /#
+# dropdown:
+#   - name: ...
+#      link: /landing/
+#########################################- 
+#- name: Discussions
+#  link: /#
+#  dropdown:
+#    - name: ...
+#      link: /landing/
+#########################################
+#- name: Reports
+#  link: /#
+#  dropdown:
+#    - name: ...
+#      link: /landing/
+#########################################
+#- name: Social Activities
+#  link: /#
+#  dropdown:
+#    - name: ...
+#      link: /landing/
+#########################################
+#- name: Useful Links
+#  link: http://www.google.com
+######################################### 
+#- name: Fun):!
+#  link: /fun/  
+# <!-- fun.md -->
+#  dropdown:
+#    - name: 2024
+#      link: /archive/2024/
+#    - name: 2025
+#      link: /archive/2025/
+#########################################
+#    - name: Sponsors Page
+#      link: /sponsors/
+#    - name: Image Gallery
+#      link: /gallery/
+#    - name: Products
+#      link: /products/
+#    - name: Recipe Page
+#      link: /example-recipe/
+#    - name: Showcase
+#      link: /showcase/
+#- name: Blog
+#  link: /blog/

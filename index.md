@@ -1,6 +1,6 @@
 ---
-title: IPM Cosmic Magnetism Group (CMG)
-#subtitle: IPM Cosmic Magnetism Group (CMG)
+title: گروه هماپران دانش
+#subtitle: 
 layout: page
 #callouts: home_callouts
 show_sidebar: false

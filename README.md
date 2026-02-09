@@ -1,4 +1,4 @@
-# IPM-CMG webpage
+# HOMAPARAN webpage
 
 [IPM-CMG webpage](https://ipm-cmg.github.io/) is based on [bulma-clean-theme](https://github.com/chrisrhymes/bulma-clean-theme).
 

@@ -2,11 +2,16 @@
 title: گروه هُماپران دانش
 #subtitle: 
 layout: page
+
 #callouts: home_callouts
 show_sidebar: false
 hero_image: img/cmb.jpg
 ---
-گروه **هُماپران دانش ** مجموعه‌ای علمی–آموزشی است که با هدف گسترش دانش عمومی و تخصصی در حوزه‌های فیزیک، کیهان‌شناسی و آموزش نوین، فعالیت خود را آغاز کرده است. تمرکز اصلی آن بر تولید محتوای علمی قابل‌فهم برای عموم، ترجمه‌ی منابع تخصصی، و طراحی محصولات آموزشی نوآورانه است.
+گروه
+**
+ هُماپران دانش
+ **
+ مجموعه‌ای علمی–آموزشی است که با هدف گسترش دانش عمومی و تخصصی در حوزه‌های فیزیک، کیهان‌شناسی و آموزش نوین، فعالیت خود را آغاز کرده است. تمرکز اصلی آن بر تولید محتوای علمی قابل‌فهم برای عموم، ترجمه‌ی منابع تخصصی، و طراحی محصولات آموزشی نوآورانه است.
 
 فعالیت‌های گروه شامل:
 
@@ -31,21 +36,42 @@ hero_image: img/cmb.jpg
 
 <br><br>
 
+<!--
 **Meetings:**
 
-CMGMs are held approximately monthly. These meetings usually take place on  **Sundays** or **Tuesdays**<!--, *typically on the first Sunday of each month*,--> at around **10 A.M.** (GMT+03:30) Iran Time in the SoA Seminar Room ([Location](https://www.google.com/maps/place/Institute+for+Astronomy/@35.8039058,51.4900625,17z/data=!4m5!3m4!1s0x3f8e051f03317155:0xb31622adb7a45cc1!8m2!3d35.8053223!4d51.4915255)). Depending on the circumstances, the meetings can be in-person, virtual, or hybrid.
+CMGMs are held approximately monthly. These meetings usually take place on  **Sundays** or **Tuesdays**, *typically on the first Sunday of each month*, at around **10 A.M.** (GMT+03:30) Iran Time in the SoA Seminar Room ([Location](https://www.google.com/maps/place/Institute+for+Astronomy/@35.8039058,51.4900625,17z/data=!4m5!3m4!1s0x3f8e051f03317155:0xb31622adb7a45cc1!8m2!3d35.8053223!4d51.4915255)). Depending on the circumstances, the meetings can be in-person, virtual, or hybrid.
 
 If you would like to attend virtually or in person, please get in touch with the organizers.
 
+--->
 <br>
 <br>
 
-**Organizer(s):**
+**اعضای گروه هماپران دانش:**
 
 <div class="container">
   <img src="img/alireza.png" class="image is-128x128">
   <div class="overlay">
-  	Alireza Talebian
+  	ریحانه کریمی
+  	<br>
+  	<a href = "mailto: talebian@ipm.ir"> talebian@ipm.ir </a>
+  </div>
+  <img src="img/alireza.png" class="image is-128x128">
+  <div class="overlay">
+  	سحر محمدی
+  	<br>
+  	<a href = "mailto: talebian@ipm.ir"> talebian@ipm.ir </a>
+  </div>
+  
+  <img src="img/alireza.png" class="image is-128x128">
+  <div class="overlay">
+  	ابراهیم یوسفی
+  	<br>
+  	<a href = "mailto: talebian@ipm.ir"> talebian@ipm.ir </a>
+  </div>
+  <img src="img/alireza.png" class="image is-128x128">
+  <div class="overlay">
+  	علیرضا طالبیان
   	<br>
   	<a href = "mailto: talebian@ipm.ir"> talebian@ipm.ir </a>
   </div>
@@ -53,9 +79,10 @@ If you would like to attend virtually or in person, please get in touch with the
 
 <br>
 <br>
-
+<!--
 **Next Event:**
 TBA
+--->
 
 <!--
 
@@ -73,6 +100,7 @@ If you would like to attend virtually or in person, please get in touch with the
 <br>
 <br>
 
+<!--
 **Recent Get-Togethers:**
 
 
@@ -88,6 +116,7 @@ If you would like to attend virtually or in person, please get in touch with the
 {: rules="groups"}
 [Meetings Archive](/Meetings/archive)
 
+--->
 
 <br>
 <br>
@@ -95,6 +124,9 @@ If you would like to attend virtually or in person, please get in touch with the
 <!---
 **Current Status:**
 --->
+
+<!--
+
 <br>
 <br>
 <br>
@@ -102,11 +134,13 @@ If you would like to attend virtually or in person, please get in touch with the
 - **Email:**
 <a href = "mailto: cmgmipm@gmail.com"> cmgmipm@gmail.com </a>
 <br>
-- **Web:** [ipm-cmg.github.io](https://ipm-cmg.github.io)
+- **Web:** [homaparan.github.io](https://homaparan.github.io)
 <br>
+
 - **Github:** [github.com/ipm-cmg](https://github.com/ipm-cmg)
 
 
+--->
 
 <!---
 email: **cmgmipm@gmail.com**

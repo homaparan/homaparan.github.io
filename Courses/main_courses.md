@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Top Navi
+title: دوره‌های آموزشی
 #menubar: docs_menu
 show_sidebar: false
-hero_image: ../img/cmb.jpg
+hero_image: ../../img/cmb.jpg
 ---
 
-New top navigations (Outreach, Journal Club, ...) are going to be created as the first related event is happend! 
+به زودی دوره‌های آموزشی برای عموم در دسترس است! همراه ما باشید...
 
 
 

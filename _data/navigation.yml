@@ -1,14 +1,14 @@
 #########################################
-- name: Meetings
-  link: /Meetings/archive
+- name: کتاب‌ها
+  link: /Books/main_books
 #  dropdown:
 #    - name: 2024
 #      link: /archive/2024/
 #    - name: 2025
 #      link: /archive/2025/
 #########################################
-- name: Top-Navi
-  link: /Top_Navigation/
+- name: دوره‌های آموزشی
+  link: /Courses/main_courses
 #  dropdown:
 #    - name: 2022
 #      link: /2022/

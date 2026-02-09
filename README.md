@@ -1,6 +1,6 @@
-# IPM-CMG webpage
+# Homaparan webpage
 
-[IPM-CMG webpage](https://ipm-cmg.github.io/) is based on [bulma-clean-theme](https://github.com/chrisrhymes/bulma-clean-theme).
+[Homaparan webpage](https://homaparan.github.io//) is based on [bulma-clean-theme](https://github.com/chrisrhymes/bulma-clean-theme).
 
 ## Installation on Ubuntu
 

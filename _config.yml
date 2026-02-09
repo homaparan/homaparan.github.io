@@ -1,10 +1,9 @@
 # Site Settings
-lang: en
-title: IPM-CMG
-tagline: IPM-CMG
+lang: fa
+title: Homaparan
+tagline: "هماپران دانش"
 #email: your-email@domain.com
-description: >
-  The IPM Cosmic Magnetism Group (CMG) is an informal, small group of researchers focusing on the study of magnetic fields in the sky.
+description: گروه هماپران دانش یک گروه علمی آموزشی است.
 #baseurl: "/bulma-clean-theme"
 #url: "https://www.csrhymes.com"
 permalink: pretty

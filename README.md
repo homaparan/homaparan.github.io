@@ -3,7 +3,7 @@
 
 <div align="center">
 
-[<img src="https://www-n.oca.eu/ohahn/MUSIC/music_logo.png" 
+[<img src="/img/final_logo_homaparan.png" 
       alt="MUSIC" 
       width="350">](https://homaparan.github.io//)
 

@@ -1,14 +1,14 @@
 #########################################
 - name: کتاب‌ها
-  link: /Books/main_books
+  link: /books/main_books
   dropdown:
    - name: ماجرای کیهان
-     link: /Books/Cosmoverse
+     link: /books/cosmoverse
    - name: آشپزخانه کیهان
-     link: /Books/Cosmo-Kitchen/
+     link: /books/cosmo-kitchen/
 #########################################
 - name: دوره‌های آموزشی
-  link: /Courses/main_courses
+  link: /courses/main_courses
 #  dropdown:
 #    - name: 2022
 #      link: /2022/

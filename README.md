@@ -1,4 +1,4 @@
-# HOMAPARAN webpage
+# Homaparan webpage
 [Homaparan webpage](https://homaparan.github.io//) is based on [bulma-clean-theme](https://github.com/chrisrhymes/bulma-clean-theme).
 
 <div align="center">

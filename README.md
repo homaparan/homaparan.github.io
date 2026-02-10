@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-# Homaparan webpage
-=======
 # HOMAPARAN webpage
->>>>>>> 631cbea2921376074897433154b41682c572a89e
-
 [Homaparan webpage](https://homaparan.github.io//) is based on [bulma-clean-theme](https://github.com/chrisrhymes/bulma-clean-theme).
 
 ## Installation on Ubuntu

@@ -5,251 +5,358 @@ show_sidebar: false
 hero_image: img/cmb.jpg
 ---
 
-<!-- // ========================================
-// استایل‌های اختصاصی گروه هُماپران دانش
-// ======================================== -->
 <style>
-
-.about-container {
-    font-family: 'Vazir', 'Segoe UI', Tahoma, sans-serif;
-    line-height: 1.8;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    direction: rtl;
-}
-
-.logo-text {
-    color: #2c5aa0;
-    border-bottom: 3px solid #2c5aa0;
-    padding-bottom: 5px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-.lead {
-    font-size: 1.1rem;
-    background: #f8fafc;
-    padding: 25px;
-    border-right: 4px solid #2c5aa0;
-    border-radius: 0 10px 10px 0;
-    margin: 30px 0;
-    text-align: justify;
-}
-
-.highlight {
-    color: #2c5aa0;
-    font-weight: bold;
-}
-
-.activities {
-    margin: 40px 0;
-}
-
-.activity-list {
-    background: linear-gradient(135deg, #f8fafc 0%, #eef5ff 100%);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    
-    h3 {
-        color: #1a3c6e !important;
-        margin-top: 25px !important;
-        padding-right: 15px;
-        border-right: 3px solid #4a6fa5;
-        font-weight: bold !important;
-        
-        &:first-child {
-            margin-top: 0 !important;
-        }
-        
-        &::before {
-            content: "■ ";
-            color: #2c5aa0;
-            margin-left: 5px;
-        }
-    }
-}
-
-.achievement {
-    background: #eef7ff;
-    border: 1px solid #c2d9f0;
-    border-radius: 10px;
-    padding: 25px;
-    margin-top: 30px;
-    position: relative;
-    
-    &::before {
-        content: "✦";
-        color: #2c5aa0;
-        font-size: 20px;
-        position: absolute;
-        left: 20px;
-        top: 25px;
-    }
-}
-
-strong {
-    color: #1a3c6e;
-}
-
-// استایل‌های سرتیترها
-h2 {
-    color: #1a3c6e;
-    border-bottom: 2px solid #eaeaea;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    color: #2c5aa0;
-    margin-top: 25px;
-}
-
-/* // ======================================== */
-/* // استایل‌های کارت اعضای گروه
-// ======================================== */
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    direction: rtl;
-}
-
-.member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .hero-section {
     text-align: center;
-    width: 200px;
-    
-    .image {
-        &.is-128x128 {
-            width: 128px;
-            height: 128px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            object-fit: cover; 
-            border: 3px solid #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            
-            &:hover {
-                transform: scale(1.05);
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-                border-color: #2c5aa0;
-            }
-        }
-    }
-}
-
-.overlay {
-    font-family: 'Vazir', Tahoma, sans-serif;
-    font-size: 16px;
-    line-height: 1.8;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+  }
+  
+  .logo-text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem;
+    opacity: 0.95;
+  }
+  
+  .cta-button {
+    background: white;
+    color: #667eea;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+  
+  .feature-card {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .book-highlight {
+    background: linear-gradient(145deg, #ffffff, #f5f5f5);
+    padding: 3rem;
+    border-radius: 20px;
+    margin: 3rem 0;
+    border: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .book-info {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .book-badge {
+    background: #ff6b6b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .member-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .member-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .member-info {
+    padding: 1rem;
+    background: white;
+    text-align: center;
+  }
+  
+  .nav-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .nav-tab {
+    padding: 0.75rem 1.5rem;
+    background: #f1f3f5;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #495057;
     font-weight: 500;
-    color: #1a3c6e;
-    
-    a {
-        color: #0066cc;
-        text-decoration: none;
-        font-size: 10px;
-        display: inline-block;
-        margin-top: 5px;
-        padding: 2px 8px;
-        border-radius: 4px;
-        background: #f0f7ff;
-        transition: all 0.2s ease;
-        
-        &:hover {
-            text-decoration: none;
-            background: #2c5aa0;
-            color: #fff;
-        }
-    }
-}
+    transition: all 0.3s;
+  }
+  
+  .nav-tab:hover, .nav-tab.active {
+    background: #667eea;
+    color: white;
+  }
 </style>
 
-
-
-<div class="about-container" markdown="1">
-
-## <span class="logo-text">هُماپران دانش</span>
-
-{: .lead }
-گروه **هُماپران دانش** مجموعه‌ای **علمی–آموزشی** است که با هدف گسترش دانش عمومی و تخصصی در حوزه‌های **فیزیک، کیهان‌شناسی و آموزش نوین**، فعالیت خود را آغاز کرده است. تمرکز اصلی آن بر تولید محتوای علمی قابل‌فهم برای عموم، ترجمه‌ی منابع تخصصی، و طراحی محصولات آموزشی نوآورانه است.
-
-## فعالیت‌های گروه
-
-{: .activities }
-<div class="activity-list" markdown="1">
-
-### ۱. تولید محتوای چندرسانه‌ای
-تهیه و تولید **پادکست‌ها و اپیزودهای علمی-آموزشی** صوتی و تصویری با محوریت آموزش مفاهیم فیزیک و کیهان‌شناسی.
-
-### ۲. ترجمه و بومی‌سازی
-ترجمه و بومی‌سازی **کتاب‌های علمی تخصصی** برای مخاطب فارسی‌زبان.
-
-### ۳. محتوای آموزشی
-طراحی و انتشار محتواهای آموزشی **دروس دبیرستان، دانشگاه و کنکور**.
-
-### ۴. آموزش حضوری و آنلاین
-آموزش و تدریس **حضوری و آنلاین** با رویکردی نوین.
-
+<!-- صفحه اصلی - لندینگ پیج -->
+<div class="hero-section">
+  <div class="logo-text">هُماپران دانش</div>
+  <div class="tagline">گسترش دانش عمومی و تخصصی در فیزیک و کیهان‌شناسی</div>
+  <a href="/activities" class="cta-button">✨ مشاهده فعالیت‌ها</a>
 </div>
 
-## دستاوردها
-
-{: .achievement }
-**نخستین دستاورد این مجموعه**، در همکاری با **انتشارات مبتکران**، کتاب
- [**"ماجراهای کیهان"**](/books/cosmoverse)
- است؛ اثری که امید می‌رود با استقبال گسترده‌ی جامعه‌ی علمی و آموزشی همراه شود.
-
+<!-- منوی تب‌ها -->
+<div class="nav-tabs">
+  <a href="/" class="nav-tab active">🏠 صفحه اصلی</a>
+  <a href="/activities" class="nav-tab">📋 فعالیت‌ها</a>
+  <a href="/books/main_books" class="nav-tab">📚 کتاب‌ها</a>
+  <a href="/team" class="nav-tab">👥 اعضا</a>
 </div>
 
-<br>
-<br>
+<!-- ویژگی‌های کلیدی -->
+<div class="features">
+  <div class="feature-card">
+    <div class="feature-icon">🎙️</div>
+    <h3>محتوای چندرسانه‌ای</h3>
+    <p>پادکست‌ها و اپیزودهای علمی-آموزشی</p>
+  </div>
+  
+  <div class="feature-card">
+    <div class="feature-icon">📖</div>
+    <h3>ترجمه و بومی‌سازی</h3>
+    <p>کتاب‌های علمی تخصصی برای مخاطب فارسی</p>
+  </div>
+  
+  <div class="feature-card">
+    <div class="feature-icon">🎓</div>
+    <h3>آموزش نوین</h3>
+    <p>حضوری و آنلاین با رویکردی جدید</p>
+  </div>
+</div>
 
-### اعضای گروه هماپران دانش:
-<br>
+<!-- دستاورد ویژه -->
+<div class="book-highlight">
+  <div class="book-info">
+    <span class="book-badge">🎉 اولین دستاورد</span>
+    <h2 style="margin: 1rem 0; font-size: 1.8rem;">ماجراهای کیهان</h2>
+    <p style="font-size: 1.1rem; line-height: 1.6; color: #4a5568;">
+      به همکاری با <strong>انتشارات مبتکران</strong>، نخستین اثر گروه هُماپران دانش منتشر شد.
+    </p>
+    <a href="/books/cosmoverse" style="display: inline-block; margin-top: 1rem; color: #667eea; font-weight: bold; text-decoration: none;">
+      بیشتر بدانید ←
+    </a>
+  </div>
+  <div style="flex: 0 0 100px; text-align: center;">
+    <div style="font-size: 5rem;">📚</div>
+  </div>
+</div>
 
-<div class="container">
-  <div class="member">
-    <img src="img/rei.png" class="image is-128x128">
-    <div class="overlay">
-      ریحانه کریمی
-      <br>
-      <a href="mailto:reihanehkariimii@gmail.com">reihanehkariimii@gmail.com</a>
-    </div>
+
+<!-- برای اعضای گروه -->
+<style>
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+  
+  .member-card {
+    text-align: center;
+    padding: 1.5rem 4.5rem;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #f0f0f0;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(102, 126, 234, 0.1);
+    border-color: #667eea;
+  }
+  
+  /* عکس گرد با حاشیه */
+  .member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .member-card:hover .member-image {
+    border-color: #667eea;
+  }
+  
+  .member-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0 0.2rem;
+    color: #2d3748;
+  }
+  
+  .member-role {
+    color: #718096;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #e2e8f0;
+  }
+  
+  /* ایمیل با آیکون */
+  .member-email {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #4a5568;
+    text-decoration: none;
+    font-size: 0.4rem;
+    padding: 0.5rem 1rem;
+    background: #f7fafc;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .member-email:hover {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+  }
+  
+  .member-email:hover .email-icon {
+    color: white;
+  }
+  
+  .email-icon {
+    font-size: 1.1rem;
+    color: #667eea;
+  }
+  
+  /* یا استفاده از آیکون شبه‌عنصر */
+  .member-email::before {
+    content: "✉️";
+    font-size: 1.1rem;
+  }
+  
+  /* نسخه فونت‌آسوم (اگه دارید) */
+  .fas.fa-envelope {
+    margin-right: 0.3rem;
+  }
+</style>
+
+<!-- بخش اعضای گروه با طراحی جدید -->
+<div style="text-align: center; margin: 3rem 0 1rem;">
+  <h2 style="font-size: 2rem; margin-bottom: 0.5rem; color: #2d3748;">👥 اعضای گروه</h2>
+  <p style="color: #718096; margin-bottom: 2rem; font-size: 1.1rem;">
+    تیم علمی هُماپران دانش
+  </p>
+</div>
+
+<div class="member-grid">
+  <!-- ریحانه کریمی -->
+  <div class="member-card">
+    <img src="img/rei.png" alt="ریحانه کریمی" class="member-image">
+    <h3 class="member-name">ریحانه کریمی</h3>
+    <div class="member-role">محقق و مدرس فیزیک</div>
+    <a href="mailto:reihanehkariimii@gmail.com" class="member-email">
+      reihanehkariimii@gmail.com
+    </a>
   </div>
   
-  <div class="member">
-    <img src="img/sahar.png" class="image is-128x128">
-    <div class="overlay">
-      سحر محمدی
-      <br>
-      <a href="mailto:sahar.mohammadi7799@gmail.com">sahar.mohammadi7799@gmail.com</a>
-    </div>
+  <!-- سحر محمدی -->
+  <div class="member-card">
+    <img src="img/sahar.png" alt="سحر محمدی" class="member-image">
+    <h3 class="member-name">سحر محمدی</h3>
+    <div class="member-role">محقق کیهان‌شناسی</div>
+    <a href="mailto:sahar.mohammadi7799@gmail.com" class="member-email">
+      sahar.mohammadi7799@gmail.com
+    </a>
   </div>
   
-  <div class="member">
-    <img src="img/ebrahim.png" class="image is-128x128">
-    <div class="overlay">
-      ابراهیم یوسفی
-      <br>
-      <a href="mailto:eyph2009@gmail.com">eyph2009@gmail.com</a>
-    </div>
+  <!-- ابراهیم یوسفی -->
+  <div class="member-card">
+    <img src="img/ebrahim.png" alt="ابراهیم یوسفی" class="member-image">
+    <h3 class="member-name">ابراهیم یوسفی</h3>
+    <div class="member-role">مدرس و مترجم</div>
+    <a href="mailto:eyph2009@gmail.com" class="member-email">
+      eyph2009@gmail.com
+    </a>
   </div>
   
-  <div class="member">
-    <img src="img/alireza.png" class="image is-128x128">
-    <div class="overlay">
-      علیرضا طالبیان
-      <br>
-      <a href="mailto:talebian@ipm.ir">talebian@ipm.ir</a>
-    </div>
+  <!-- علیرضا طالبیان -->
+  <div class="member-card">
+    <img src="img/alireza.png" alt="علیرضا طالبیان" class="member-image">
+    <h3 class="member-name">علیرضا طالبیان</h3>
+    <div class="member-role">پژوهشگر پسادکتری</div>
+    <a href="mailto:talebian@ipm.ir" class="member-email">
+      talebian@ipm.ir
+    </a>
   </div>
+</div>
+
+
+
+<div style="text-align: center; margin: 3rem 0;">
+  <a href="/team" style="color: #667eea; text-decoration: none; font-weight: bold;">مشاهده همه اعضا ←</a>
 </div>

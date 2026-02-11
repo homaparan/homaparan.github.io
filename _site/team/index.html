@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="rtl"
+ lang="fa"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>اعضای گروه هُماپران دانش | Homaparan</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="اعضای گروه هُماپران دانش" />
+<meta property="og:locale" content="fa" />
+<meta name="description" content="گروه هماپران دانش یک گروه علمی آموزشی است." />
+<meta property="og:description" content="گروه هماپران دانش یک گروه علمی آموزشی است." />
+<link rel="canonical" href="http://localhost:4000/team/" />
+<meta property="og:url" content="http://localhost:4000/team/" />
+<meta property="og:site_name" content="Homaparan" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="اعضای گروه هُماپران دانش" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"گروه هماپران دانش یک گروه علمی آموزشی است.","headline":"اعضای گروه هُماپران دانش","url":"http://localhost:4000/team/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="navbar-item">
+                Homaparan
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item ">Home</a>
+                
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="/books/main_books" class="navbar-link ">کتاب‌ها</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/books/cosmoverse" class="navbar-item ">ماجرای کیهان</a>
+                            
+                            <a href="/books/cosmo-kitchen/" class="navbar-item ">آشپزخانه کیهان</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/courses/main_courses" class="navbar-item ">دوره‌های آموزشی</a>
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-medium  is-bold is-primary"  style="background: url('img/team-hero.jpg') no-repeat center center; background-size: cover;" >
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">اعضای گروه هُماپران دانش</h1>
+            <p class="subtitle is-3"></p>
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+                    
+                    
+                    
+<div class="content">
+    <style>
+  /* استایل‌های صفحه اعضا */
+  .team-header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    border-radius: 20px;
+    margin-bottom: 3rem;
+  }
+  
+  .team-header h1 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+  }
+  
+  .team-header p {
+    font-size: 1.2rem;
+    color: #718096;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .member-profile {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-wrap: wrap;
+  }
+  
+  .member-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.08);
+    border-color: #667eea30;
+  }
+  
+  .member-profile:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .member-image-container {
+    flex: 0 0 280px;
+    text-align: center;
+  }
+  
+  .member-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .member-profile:hover .member-image {
+    transform: scale(1.02);
+    border-color: #667eea;
+  }
+  
+  .member-bio {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .member-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    border-bottom: 3px solid #667eea;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+  }
+  
+  .member-title {
+    font-size: 1.2rem;
+    color: #667eea;
+    margin: 0.5rem 0 1rem;
+    font-weight: 500;
+  }
+  
+  .member-contact {
+    background: #f8fafc;
+    padding: 1.2rem;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    display: inline-block;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .member-contact a {
+    color: #4a5568;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .member-contact a:hover {
+    color: #667eea;
+  }
+  
+  .member-description {
+    line-height: 1.8;
+    color: #4a5568;
+  }
+  
+  .member-description p {
+    margin-bottom: 1rem;
+  }
+  
+  .social-links {
+    margin-top: 1.5rem;
+  }
+  
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #edf2f7;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: #4a5568;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    transition: all 0.2s;
+  }
+  
+  .social-link:hover {
+    background: #667eea;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .member-profile {
+      text-align: center;
+      justify-content: center;
+    }
+    
+    .member-profile:nth-child(even) {
+      flex-direction: row;
+    }
+    
+    .member-image-container {
+      flex: 0 0 100%;
+    }
+    
+    .member-name {
+      margin: 0 auto;
+    }
+  }
+</style>
+
+<div class="team-header">
+  <h1>👥 تیم علمی هُماپران دانش</h1>
+  <p>آشنایی با اعضای گروه و زمینه‌های تخصصی هر یک</p>
+</div>
+
+<!-- ============ ریحانه کریمی ============ -->
+<div class="member-profile">
+  <div class="member-image-container">
+    <img src="/img/rei.png" alt="ریحانه کریمی" class="member-image" />
+  </div>
+  <div class="member-bio">
+    <div class="member-name">ریحانه کریمی</div>
+    <div class="member-title">🎓 محقق و مدرس فیزیک</div>
+    
+    <div class="member-contact">
+      <a href="mailto:reihanehkariimii@gmail.com">
+        📧 reihanehkariimii@gmail.com
+      </a>
+    </div>
+    
+    <div class="member-description">
+      <p>
+        ریحانه کریمی، کارشناس ارشد فیزیک از دانشگاه خواجه نصیرالدین طوسی، با بیش از ۵ سال سابقه تدریس 
+        دروس فیزیک دبیرستان و دانشگاه. ایشان فعالیت خود را در گروه هُماپران دانش با 
+        تمرکز بر تولید محتوای آموزشی با رویکرد مفهومی و قابل فهم آغاز کرده‌اند.
+      </p>
+      
+      <p>
+        از جمله فعالیت‌های ایشان می‌توان به ... اشاره کرد. رویکرد اصلی 
+        ریحانه در آموزش، پیوند مفاهیم انتزاعی فیزیک با پدیده‌های روزمره و ملموس است.
+      </p>
+      
+      <p>
+        <strong>زمینه‌های تخصصی:</strong> فیزیک پایه، ...
+      </p>
+    </div>
+    
+    <div class="social-links">
+      <a href="#" class="social-link">🔗 لینکدین</a>
+      <a href="#" class="social-link">🐦 توییتر</a>
+      <a href="#" class="social-link">📚 گوگل اسکالر</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ سحر محمدی ============ -->
+<div class="member-profile">
+  <div class="member-image-container">
+    <img src="/img/sahar.png" alt="سحر محمدی" class="member-image" />
+  </div>
+  <div class="member-bio">
+    <div class="member-name">سحر محمدی</div>
+    <div class="member-title">🔭 محقق کیهان‌شناسی</div>
+    
+    <div class="member-contact">
+      <a href="mailto:sahar.mohammadi7799@gmail.com">
+        📧 sahar.mohammadi7799@gmail.com
+      </a>
+    </div>
+    
+    <div class="member-description">
+      <p>
+        دکتر سحر محمدی، استاد دانشگاه و پژوهشگری 
+        جوان و پرانرژی در زمینه تکامل کیهان اولیه و تابش زمینه کیهانی. ایشان از 
+        بنیان‌گذاران گروه هُماپران دانش و از ایده‌پردازان اصلی ... است.
+      </p>
+      
+      <p>
+        سحر باور دارد که علم کیهان‌شناسی یکی از جذاب‌ترین و در عین حال ناشناخته‌ترین 
+        حوزه‌ها برای عموم مردم است. به همین دلیل، تمرکز اصلی خود را بر تولید محتوای 
+        عمومی و قابل فهم در این حوزه گذاشته و تاکنون چندین اپیزود پادکست و مقاله 
+        ترویجی در این زمینه منتشر کرده است.
+      </p>
+      
+      <p>
+        <strong>زمینه‌های تخصصی:</strong> کیهان‌شناسی، نسبیت عام، تابش زمینه کیهانی، 
+        ترویج علم، پادکست علمی
+      </p>
+    </div>
+    
+    <div class="social-links">
+      <a href="#" class="social-link">🔗 لینکدین</a>
+      <a href="#" class="social-link">🐦 توییتر</a>
+      <a href="#" class="social-link">🎙️ پادکست</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ابراهیم یوسفی ============ -->
+<div class="member-profile">
+  <div class="member-image-container">
+    <img src="/img/ebrahim.png" alt="ابراهیم یوسفی" class="member-image" />
+  </div>
+  <div class="member-bio">
+    <div class="member-name">ابراهیم یوسفی</div>
+    <div class="member-title">📖 مدرس و مترجم</div>
+    
+    <div class="member-contact">
+      <a href="mailto:eyph2009@gmail.com">
+        📧 eyph2009@gmail.com
+      </a>
+    </div>
+    
+    <div class="member-description">
+      <p>
+        ابراهیم یوسفی، استاد دانشگاه، مترجم و مدرس فیزیک، با سال‌ها تجربه در ترجمه منابع تخصصی 
+        فیزیک و کیهان‌شناسی. ایشان مسئولیت ... را بر عهده داشته‌اند و هم‌اکنون مشغول ترجمه اثری دیگر 
+        در زمینه ... هستند.
+      </p>
+      
+      <p>
+        ابراهیم بر این باور است که ترجمه روان و دقیق منابع علمی، نقشی کلیدی در 
+        گسترش دانش در کشور دارد. او در ترجمه‌های خود تلاش می‌کند ضمن حفظ امانت 
+        علمی، متنی روان و خوش‌خوان برای مخاطب فارسی‌زبان ارائه دهد.
+      </p>
+      
+      <p>
+        <strong>زمینه‌های تخصصی:</strong> ترجمه متون تخصصی، ویراستاری علمی، 
+        اخترفیزیک، نسبیت، آموزش بزرگسالان
+      </p>
+    </div>
+    
+    <div class="social-links">
+      <a href="#" class="social-link">🔗 لینکدین</a>
+      <a href="#" class="social-link">📝 ترجمه‌ها</a>
+      <a href="#" class="social-link">📚 گوگل اسکالر</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ علیرضا طالبیان ============ -->
+<div class="member-profile">
+  <div class="member-image-container">
+    <img src="/img/alireza.png" alt="علیرضا طالبیان" class="member-image" />
+  </div>
+  <div class="member-bio">
+    <div class="member-name">علیرضا طالبیان</div>
+    <div class="member-title">⭐ پژوهشگر پسادکتری</div>
+    
+    <div class="member-contact">
+      <a href="mailto:talebian@ipm.ir">
+        📧 talebian@ipm.ir
+      </a>
+    </div>
+    
+    <div class="member-description">
+      <p>
+        علیرضا طالبیان، استاد فیزیک دانشگاه شهید بهشتی تهران و پژوهشگر پسادکتری در پژوهشگاه دانش‌های بنیادی (IPM)، 
+        در حوزه کیهان‌شناسی نظری و ساختارهای بزرگ‌مقیاس کیهان فعالیت می‌کند. 
+        ایشان دارای دکترای تخصصی فیزیک از دانشگاه تهران هستند و مقالات متعددی 
+        در ژورنال‌های معتبر بین‌المللی منتشر کرده‌اند.
+      </p>
+      
+      <p>
+        علیرضا به عنوان .... او علاقه زیادی به ترویج علم و انتقال 
+        جدیدترین یافته‌های کیهان‌شناسی به زبان ساده دارد و معتقد است که علم 
+        باید از ... بیرون بیاید و به زندگی مردم راه یابد.
+      </p>
+      
+      <p>
+        <strong>زمینه‌های تخصصی:</strong> کیهان‌شناسی نظری، ساختار بزرگ‌مقیاس، 
+        گرانش، تورم کیهانی، داده‌کاوی در کیهان‌شناسی
+      </p>
+    </div>
+    
+    <div class="social-links">
+      <a href="#" class="social-link">🔗 لینکدین</a>
+      <a href="#" class="social-link">🐦 توییتر</a>
+      <a href="#" class="social-link">📄 مقالات</a>
+      <a href="#" class="social-link">🎓 IPM</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ دعوت به همکاری ============ -->
+<div style="text-align: center; margin: 5rem 0 3rem; padding: 3rem; background: linear-gradient(135deg, #667eea08 0%, #764ba208 100%); border-radius: 30px;">
+  <h2 style="font-size: 2rem; color: #2d3748; margin-bottom: 1rem;">✨ به ما بپیوندید</h2>
+  <p style="font-size: 1.2rem; color: #718096; max-width: 600px; margin: 0 auto 2rem;">
+    اگر شما هم به فیزیک و کیهان‌شناسی علاقه دارید و ایده‌ای برای ترویج علم دارید، خوشحال می‌شویم با ما همراه شوید.
+  </p>
+  <a href="mailto:homaparan@example.com" style="display: inline-block; background: #667eea; color: white; padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; transition: transform 0.3s;">📧 ارسال رزومه</a>
+</div>
+
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+        
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>

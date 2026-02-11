@@ -1,9 +1,9 @@
 ---
 layout: page
 title: کتابخانه کیهانی - فصل اول
-subtitle: بیگ‌بنگ | آفرینش جهان
+subtitle: تاریخچه کیهان | آفرینش جهان
 show_sidebar: false
-hero_image: ../../img/cmb.jpg
+# hero_image: ../../img/cmb.jpg
 ---
 
 <style>

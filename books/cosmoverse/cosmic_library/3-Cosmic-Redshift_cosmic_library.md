@@ -1,63 +1,595 @@
 ---
 layout: page
 title: کتابخانه کیهانی - فصل سوم
-#menubar: docs_menu
+subtitle: سرخ‌گرایی کیهانی | اثر داپلر | طیف‌بینی
 show_sidebar: false
-hero_image: ../../img/cmb.jpg
+# hero_image: ../../img/cmb.jpg
 ---
 
-### فصل سوم
+<style>
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
 
-## 📺 ویدیوها
+.cosmic-library {
+    font-family: 'Vazir', 'Segoe UI', Tahoma, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    direction: rtl;
+    color: #1a3c6e;
+}
 
-1. [ **اثر داپلر چگونه کار می‌کند؟** - تماشا کنید](https://www.youtube.com/watch?v=ffg4TOpXZyg)
-2. [ **اثر داپلر چیست؟** - تماشا کنید](https://www.youtube.com/watch?v=gytA8PuGQo4)
-3. [ **آژیر آمبولانس و تفنگ رادار پلیس** - تماشا کنید](https://www.youtube.com/watch?v=ikgRZt1BSyk)
-4. [ **انتقال به سرخ (ردشیفت) چیست؟** - تماشا کنید](https://www.youtube.com/watch?v=-mQ41yA6LaA)
-5. [ **انتقال به سرخ - اخترفیزیک** - تماشا کنید](https://www.youtube.com/watch?v=_xDETeEA1yE)
-6. [ **اثر داپلر، انتقال به سرخ و نظریه بیگ‌بنگ** - تماشا کنید](https://www.youtube.com/watch?v=bWEtm-7cYzM)
-7. [ **فیزیک GCSE: انتقال به سرخ چیست؟** - تماشا کنید](https://www.youtube.com/watch?v=mx2M_ZKXM_c)
-8. [ **انتقال به سرخ - مقیاس جهان آکادمی خان** - تماشا کنید](https://www.youtube.com/watch?v=jjy-eqWM38g)
-9. [ **نور: دوره فشرده نجوم** - تماشا کنید](https://www.youtube.com/watch?v=LYseY0y2tgg)
-10. [ **مقدمه‌ای بر طیف‌بینی - آکادمی خان** - تماشا کنید](https://www.youtube.com/watch?v=_1mpHBAXh1c)
-11. [ **طیف‌بینی، توضیح داده شده** - تماشا کنید](https://www.youtube.com/watch?v=Y3cTy4HXNmM&t=146s)
+/* هدر فصل */
+.chapter-header {
+    background: linear-gradient(135deg, #4a0e0e 0%, #8b1a1a 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(139, 26, 26, 0.3);
+}
 
-## 🎮 تعاملی
+.chapter-header::before {
+    content: "🔴";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 80px;
+    opacity: 0.2;
+}
 
-1. [ **تحلیل نور: طیف ستاره آلتایر** - تجربه کنید](https://viewspace.org/interactives/unveiling_invisible_universe/analyzing_light/spectrum_of_the_star_altair)
-2. [ **شبیه‌ساز انتقال به سرخ کیهانی** - تجربه کنید](https://foothill.edu/astronomy/astrosims/cosmological-redshift/index.html)
-3. [ **ردیمگ: انتقال به سرخ** - تجربه کنید](https://readymag.com/u47032242/741098/)
+.chapter-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-## 🌐 وبسایت‌ها
+.chapter-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
 
-1. [ **طیف‌بینی: خواندن رنگین‌کمان** - بازدید کنید](https://hubblesite.org/contents/articles/spectroscopy-reading-the-rainbow)
-2. [ **کتاب فضایی: انتقال به سرخ** - بازدید کنید](https://lco.global/spacebook/light/redshift/)
+/* بخش‌های محتوا */
+.content-section {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border: 1px solid #e1ecf4;
+}
 
-## 🎬 مستندها
+.section-title {
+    color: #1a3c6e;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    padding-right: 15px;
+    border-right: 5px solid #8b1a1a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-1. [ **سفر به لبه جهان** - تماشا کنید](https://www.youtube.com/watch?v=68tpCpDOsyA)
-2. [ **همه چیز و هیچ چیز** - تماشا کنید](https://topdocumentaryfilms.com/everything-and-nothing/)
-3. [ **اتم: نبرد غول‌ها** - تماشا کنید](https://www.youtube.com/watch?v=GOJFznzSZhM)
+.section-title span {
+    background: #8b1a1a;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 1rem;
+}
 
-## 📰 مقالات
+/* لیست منابع */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 15px;
+}
 
-1. [ **انتقال به سرخ کیهانی چیست؟** - مطالعه کنید](https://science.howstuffworks.com/cosmological-redshift.htm)
-2. [ **آژانس فضایی اروپا: انتقال به سرخ چیست؟** - مطالعه کنید](https://www.esa.int/Science_Exploration/Space_Science/What_is_red_shift)
+.resource-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    background: #f8fafc;
+    border-radius: 12px;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
 
-## 🖼️ اینفوگرافیک‌ها
+.resource-item:hover {
+    background: #fff0f0;
+    border-color: #8b1a1a;
+    transform: translateX(-5px);
+}
 
-1. [ **انتقال به سرخ کیهانی چیست؟** - مشاهده کنید](https://stsci-opo.org/STScI-01EVSVGBHPK8J8YWETX1TC4Q0K.png)
+.resource-icon {
+    font-size: 1.5rem;
+    margin-left: 12px;
+    color: #8b1a1a;
+}
 
----
+.resource-link {
+    color: #1a3c6e;
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex: 1;
+}
 
-## 💡 نکات استفاده:
-- منابع به تفکیک نوع محتوا دسته‌بندی شده‌اند
-- مناسب برای آموزش مفاهیم اثر داپلر و انتقال به سرخ در نجوم
+.resource-link:hover {
+    color: #8b1a1a;
+}
 
-## 📊 دسته‌بندی موضوعی:
-- **مفاهیم پایه:** ویدیوهای ۱، ۲، ۳ (اثر داپلر)
-- **انتقال به سرخ:** ویدیوهای ۴، ۵، ۶، ۷، ۸
-- **طیف‌بینی:** ویدیوهای ۹، ۱۰، ۱۱
-- **ابزارهای تعاملی:** شبیه‌سازهای آنلاین
-- **منابع بصری:** مستندها و اینفوگرافیک
+.resource-tag {
+    background: #ffe6e6;
+    color: #8b1a1a;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    margin-right: 10px;
+    white-space: nowrap;
+}
 
+/* بخش‌های ویژه */
+.special-section {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe6e6 100%);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px 0;
+    border: 1px dashed #8b1a1a;
+}
+
+.topic-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.category-card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.02);
+    border: 1px solid #ffcdcd;
+}
+
+.category-title {
+    color: #8b1a1a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.category-items {
+    color: #1a3c6e;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* دکمه بازگشت */
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: #8b1a1a;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+}
+
+.back-button:hover {
+    background: white;
+    color: #8b1a1a;
+    border-color: #8b1a1a;
+}
+
+/* شمارنده منابع */
+.stats-bar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    background: #ffe6e6;
+    padding: 8px 20px;
+    border-radius: 30px;
+    color: #8b1a1a;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* کارت تعاملی ویژه */
+.interactive-card {
+    background: linear-gradient(135deg, #ff9999 0%, #ff6b6b 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.interactive-card a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.interactive-card:hover {
+    transform: scale(1.02);
+}
+
+/* اینفوگرافیک */
+.infographic-card {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.infographic-card a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .chapter-title {
+        font-size: 1.8rem;
+    }
+    
+    .topic-categories {
+        flex-direction: column;
+    }
+}
+</style>
+
+<div class="cosmic-library" dir="rtl">
+
+<!-- هدر فصل -->
+<div class="chapter-header">
+    <div class="chapter-title">🔴 فصل سوم: سرخ‌گرایی کیهانی</div>
+    <div class="chapter-subtitle">اثر داپلر | انتقال به سرخ | طیف‌بینی | ردشیفت</div>
+    <div style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
+        <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">📺 ۱۱ ویدیو</span>
+        <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">🎮 ۳ تعاملی</span>
+        <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">🌐 ۲ وبسایت</span>
+        <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">🖼️ ۱ اینفوگرافیک</span>
+    </div>
+</div>
+
+<!-- آمار سریع -->
+<div class="stats-bar">
+    <span class="stat-item">📊 مجموع منابع: ۱۹ منبع</span>
+    <span class="stat-item">⏱ مناسب برای: ۵ ساعت آموزش</span>
+    <span class="stat-item">🎯 سطح: مبتدی تا متوسط</span>
+    <span class="stat-item">🔴 طول موج: افزایش = دور شدن</span>
+</div>
+
+<!-- 📺 ویدیوها -->
+<div class="content-section">
+    <div class="section-title">
+        📺 ویدیوهای آموزشی <span>۱۱ منبع</span>
+    </div>
+    <div class="resources-grid">
+        <!-- ردیف ۱ - اثر داپلر -->
+        <div class="resource-item">
+            <span class="resource-icon">🚑</span>
+            <a href="https://www.youtube.com/watch?v=ffg4TOpXZyg" class="resource-link" target="_blank">
+                <strong>اثر داپلر چگونه کار می‌کند؟</strong>
+                <span class="resource-tag">داپلر</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">📡</span>
+            <a href="https://www.youtube.com/watch?v=gytA8PuGQo4" class="resource-link" target="_blank">
+                <strong>اثر داپلر چیست؟</strong>
+                <span class="resource-tag">داپلر</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">🚓</span>
+            <a href="https://www.youtube.com/watch?v=ikgRZt1BSyk" class="resource-link" target="_blank">
+                <strong>آژیر آمبولانس و تفنگ رادار پلیس</strong>
+                <span class="resource-tag">داپلر</span>
+            </a>
+        </div>
+        
+        <!-- ردیف ۲ - انتقال به سرخ -->
+        <div class="resource-item">
+            <span class="resource-icon">🔴</span>
+            <a href="https://www.youtube.com/watch?v=-mQ41yA6LaA" class="resource-link" target="_blank">
+                <strong>انتقال به سرخ (ردشیفت) چیست؟</strong>
+                <span class="resource-tag">ردشیفت</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">🌠</span>
+            <a href="https://www.youtube.com/watch?v=_xDETeEA1yE" class="resource-link" target="_blank">
+                <strong>انتقال به سرخ - اخترفیزیک</strong>
+                <span class="resource-tag">ردشیفت</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">💥</span>
+            <a href="https://www.youtube.com/watch?v=bWEtm-7cYzM" class="resource-link" target="_blank">
+                <strong>اثر داپلر، انتقال به سرخ و نظریه بیگ‌بنگ</strong>
+                <span class="resource-tag">ردشیفت</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">📘</span>
+            <a href="https://www.youtube.com/watch?v=mx2M_ZKXM_c" class="resource-link" target="_blank">
+                <strong>فیزیک GCSE: انتقال به سرخ چیست؟</strong>
+                <span class="resource-tag">ردشیفت</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">📏</span>
+            <a href="https://www.youtube.com/watch?v=jjy-eqWM38g" class="resource-link" target="_blank">
+                <strong>انتقال به سرخ - مقیاس جهان آکادمی خان</strong>
+                <span class="resource-tag">آکادمی خان</span>
+            </a>
+        </div>
+        
+        <!-- ردیف ۳ - طیف‌بینی -->
+        <div class="resource-item">
+            <span class="resource-icon">🌈</span>
+            <a href="https://www.youtube.com/watch?v=LYseY0y2tgg" class="resource-link" target="_blank">
+                <strong>نور: دوره فشرده نجوم</strong>
+                <span class="resource-tag">طیف‌بینی</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">🔬</span>
+            <a href="https://www.youtube.com/watch?v=_1mpHBAXh1c" class="resource-link" target="_blank">
+                <strong>مقدمه‌ای بر طیف‌بینی - آکادمی خان</strong>
+                <span class="resource-tag">طیف‌بینی</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">⚛️</span>
+            <a href="https://www.youtube.com/watch?v=Y3cTy4HXNmM&t=146s" class="resource-link" target="_blank">
+                <strong>طیف‌بینی، توضیح داده شده</strong>
+                <span class="resource-tag">طیف‌بینی</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 🎮 ابزارهای تعاملی -->
+<div class="content-section">
+    <div class="section-title">
+        🎮 ابزارهای تعاملی <span>۳ منبع</span>
+    </div>
+    <div class="resources-grid">
+        <div class="resource-item">
+            <span class="resource-icon">⭐</span>
+            <a href="https://viewspace.org/interactives/unveiling_invisible_universe/analyzing_light/spectrum_of_the_star_altair" class="resource-link" target="_blank">
+                <strong>تحلیل نور: طیف ستاره آلتایر</strong>
+                <span class="resource-tag">تعاملی</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">🔄</span>
+            <a href="https://foothill.edu/astronomy/astrosims/cosmological-redshift/index.html" class="resource-link" target="_blank">
+                <strong>شبیه‌ساز انتقال به سرخ کیهانی</strong>
+                <span class="resource-tag">شبیه‌ساز</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">🎨</span>
+            <a href="https://readymag.com/u47032242/741098/" class="resource-link" target="_blank">
+                <strong>ردیمگ: انتقال به سرخ</strong>
+                <span class="resource-tag">تصویری</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 🌐 وبسایت‌ها -->
+<div class="content-section">
+    <div class="section-title">
+        🌐 وبسایت‌های مرجع <span>۲ منبع</span>
+    </div>
+    <div class="resources-grid">
+        <div class="resource-item">
+            <span class="resource-icon">🔭</span>
+            <a href="https://hubblesite.org/contents/articles/spectroscopy-reading-the-rainbow" class="resource-link" target="_blank">
+                <strong>طیف‌بینی: خواندن رنگین‌کمان</strong>
+                <span class="resource-tag">هابل</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">📖</span>
+            <a href="https://lco.global/spacebook/light/redshift/" class="resource-link" target="_blank">
+                <strong>کتاب فضایی: انتقال به سرخ</strong>
+                <span class="resource-tag">LCO</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 🎬 مستندها -->
+<div class="content-section">
+    <div class="section-title">
+        🎬 مستندهای علمی <span>۳ منبع</span>
+    </div>
+    <div class="resources-grid">
+        <div class="resource-item">
+            <span class="resource-icon">🌌</span>
+            <a href="https://www.youtube.com/watch?v=68tpCpDOsyA" class="resource-link" target="_blank">
+                <strong>سفر به لبه جهان</strong>
+                <span class="resource-tag">مستند</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">✨</span>
+            <a href="https://topdocumentaryfilms.com/everything-and-nothing/" class="resource-link" target="_blank">
+                <strong>همه چیز و هیچ چیز</strong>
+                <span class="resource-tag">مستند</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">⚛️</span>
+            <a href="https://www.youtube.com/watch?v=GOJFznzSZhM" class="resource-link" target="_blank">
+                <strong>اتم: نبرد غول‌ها</strong>
+                <span class="resource-tag">مستند</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 📰 مقالات -->
+<div class="content-section">
+    <div class="section-title">
+        📰 مقالات علمی <span>۲ منبع</span>
+    </div>
+    <div class="resources-grid">
+        <div class="resource-item">
+            <span class="resource-icon">📝</span>
+            <a href="https://science.howstuffworks.com/cosmological-redshift.htm" class="resource-link" target="_blank">
+                <strong>انتقال به سرخ کیهانی چیست؟</strong>
+                <span class="resource-tag">HowStuffWorks</span>
+            </a>
+        </div>
+        
+        <div class="resource-item">
+            <span class="resource-icon">🛰️</span>
+            <a href="https://www.esa.int/Science_Exploration/Space_Science/What_is_red_shift" class="resource-link" target="_blank">
+                <strong>آژانس فضایی اروپا: انتقال به سرخ چیست؟</strong>
+                <span class="resource-tag">ESA</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 🖼️ اینفوگرافیک -->
+<div class="content-section">
+    <div class="section-title">
+        🖼️ اینفوگرافیک آموزشی <span>۱ منبع</span>
+    </div>
+    <div class="infographic-card">
+        <div style="font-size: 3rem; margin-bottom: 10px;">📊</div>
+        <a href="https://stsci-opo.org/STScI-01EVSVGBHPK8J8YWETX1TC4Q0K.png" target="_blank">
+            🌈 انتقال به سرخ کیهانی چیست؟
+        </a>
+        <p style="margin-top: 15px; color: rgba(255,255,255,0.9);">
+            اینفوگرافیک کامل از پدیده انتقال به سرخ و ارتباط آن با انبساط جهان
+        </p>
+    </div>
+</div>
+
+<!-- دسته‌بندی موضوعی -->
+<div class="special-section">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+        <span style="font-size: 2rem;">📊</span>
+        <h2 style="color: #8b1a1a; margin: 0;">دسته‌بندی موضوعی منابع</h2>
+    </div>
+    
+    <div class="topic-categories">
+        <div class="category-card">
+            <div class="category-title">
+                <span>🚑</span> مفاهیم پایه
+            </div>
+            <div class="category-items">
+                ویدیوهای ۱، ۲، ۳<br>
+                اثر داپلر در زندگی روزمره
+            </div>
+        </div>
+        
+        <div class="category-card">
+            <div class="category-title">
+                <span>🔴</span> انتقال به سرخ
+            </div>
+            <div class="category-items">
+                ویدیوهای ۴، ۵، ۶، ۷، ۸<br>
+                شبیه‌ساز ردشیفت
+            </div>
+        </div>
+        
+        <div class="category-card">
+            <div class="category-title">
+                <span>🌈</span> طیف‌بینی
+            </div>
+            <div class="category-items">
+                ویدیوهای ۹، ۱۰، ۱۱<br>
+                تحلیل طیف ستاره آلتایر
+            </div>
+        </div>
+        
+        <div class="category-card">
+            <div class="category-title">
+                <span>🛠️</span> ابزارهای تعاملی
+            </div>
+            <div class="category-items">
+                ۳ شبیه‌ساز آنلاین<br>
+                وبسایت‌های آموزشی
+            </div>
+        </div>
+        
+        <div class="category-card">
+            <div class="category-title">
+                <span>🎬</span> منابع بصری
+            </div>
+            <div class="category-items">
+                مستندها و اینفوگرافیک<br>
+                تصاویر و انیمیشن‌ها
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- نکات استفاده -->
+<div style="background: #fff0f0; border-radius: 16px; padding: 25px; margin-top: 30px; border-right: 5px solid #8b1a1a;">
+    <h3 style="color: #8b1a1a; display: flex; align-items: center; gap: 10px;">
+        <span>💡</span> نکات استفاده
+    </h3>
+    <ul style="color: #8b1a1a; line-height: 1.8; padding-right: 20px;">
+        <li>منابع به تفکیک نوع محتوا دسته‌بندی شده‌اند</li>
+        <li>مناسب برای آموزش مفاهیم اثر داپلر و انتقال به سرخ در نجوم</li>
+        <li>با ابزارهای تعاملی، انتقال به سرخ را به صورت عملی تجربه کنید</li>
+        <li>اینفوگرافیک انتهای صفحه، دید کلی کاملی از مفهوم ردشیفت ارائه می‌دهد</li>
+        <li>مستند "اتم: نبرد غول‌ها" تاریخچه کشف طیف‌بینی را روایت می‌کند</li>
+    </ul>
+</div>
+
+<!-- دکمه بازگشت -->
+<div style="text-align: center; margin-top: 40px;">
+    <a href="/books/cosmoverse/cosmic_library/main_cosmic_library" class="back-button">
+        ← بازگشت به کتابخانه کیهانی
+    </a>
+</div>
+
+</div>

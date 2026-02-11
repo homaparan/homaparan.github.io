@@ -61,8 +61,8 @@ hero_image: ../../../img/cosmoverse/cosmoverse_logo.png
 }
 
 .chapter-image {
-    width: 100%;
-    height: 180px;
+    width: 350px;
+    height: 100%;
     object-fit: cover;
     border-bottom: 3px solid #2c5aa0;
 }

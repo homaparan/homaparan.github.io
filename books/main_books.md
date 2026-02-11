@@ -1,9 +1,9 @@
 ---
 layout: page
-title: کتاب‌های هُماپران دانش
-subtitle: آثار مکتوب گروه آموزشی هُماپران دانش
+# title: کتاب‌های هُماپران دانش
+# subtitle: آثار مکتوب گروه آموزشی هُماپران دانش
 show_sidebar: false
-hero_image: ../../img/cmb.jpg
+# hero_image: ../../img/cmb.jpg
 ---
 
 <style>

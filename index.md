@@ -518,8 +518,9 @@ show_sidebar: false
     </div> -->
 
     <div class="hero-brand">
-    <img src="/img/final_logo_homaparan.png" alt="هُماپران دانش" style="height: 60px; width: auto; filter: drop-shadow(0 0 20px rgba(102, 126, 234, 0.5));">
-    <h1 class="hero-title">هُماپران دانش</h1>
+    <span class="hero-icon">🪐</span>
+    <img src="/img/final_logo_homaparan_transparent.png" alt="هُماپران دانش" style="height: 200px; width: auto; filter: drop-shadow(0 0 20px rgba(102, 126, 234, 0.5));">
+    <h1 class="hero-title"></h1>
     </div>
     
     <!-- شعار اصلی -->

@@ -86,11 +86,11 @@
 </nav>
 
     
-        <section class="hero  is-medium  is-bold is-primary"  style="background: url('../../../../img/cmb.jpg') no-repeat center center; background-size: cover;" >
+        <section class="hero  is-medium  is-bold is-primary" >
     <div class="hero-body ">
         <div class="container">
             <h1 class="title is-2">ماجرای کیهان - کتابخانه کیهانی</h1>
-            <p class="subtitle is-3"></p>
+            <p class="subtitle is-3">مرجع جامع منابع چندرسانه‌ای برای هر شش فصل</p>
             
         </div>
     </div>
@@ -110,50 +110,572 @@
                     
                     
 <div class="content">
-    <table rules="groups">
-  <thead>
-    <tr>
-      <th style="text-align: left">عنوان</th>
-      <th style="text-align: left">توضیحات</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left"><a href="/books/cosmoverse/cosmic_library/1-The-Big-Bang-History_cosmic_library">فصل ۱</a></td>
-      <td style="text-align: left">توضیحات</td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td style="text-align: left"><a href="/books/cosmoverse/cosmic_library/2-Hubble-Lemaitre-law_cosmic_library">فصل ۲</a></td>
-      <td style="text-align: left">توضیحات</td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td style="text-align: left"><a href="/books/cosmoverse/cosmic_library/3-Cosmic-Redshift_cosmic_library">فصل ۳</a></td>
-      <td style="text-align: left">توضیحات</td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td style="text-align: left"><a href="/books/cosmoverse/cosmic_library/4-Geometric-Gravity_cosmic_library">فصل ۴</a></td>
-      <td style="text-align: left">توضیحات</td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td style="text-align: left"><a href="/books/cosmoverse/cosmic_library/5-Dark-Matter_cosmic_library">فصل ۵</a></td>
-      <td style="text-align: left">توضیحات</td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td style="text-align: left"><a href="/books/cosmoverse/cosmic_library/6-Dark-Energy_cosmic_library">فصل ۶</a></td>
-      <td style="text-align: left">توضیحات</td>
-    </tr>
-  </tbody>
-</table>
+    <style>
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+.library-index {
+    font-family: 'Vazir', 'Segoe UI', Tahoma, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    direction: rtl;
+    color: #1a3c6e;
+}
+
+/* هدر اصلی */
+.library-header {
+    background: linear-gradient(135deg, #0a1a2f 0%, #1a3c6e 100%);
+    color: white;
+    padding: 50px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(26, 60, 110, 0.3);
+    text-align: center;
+}
+
+.library-header::before {
+    content: "📚";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 100px;
+    opacity: 0.1;
+}
+
+.library-header::after {
+    content: "🌌";
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 100px;
+    opacity: 0.1;
+}
+
+.library-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.library-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* آمار سریع */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    text-align: center;
+    border: 1px solid #e1ecf4;
+    flex: 1;
+    min-width: 150px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c5aa0;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #1a3c6e;
+    margin-top: 10px;
+}
+
+/* جدول فصل‌ها */
+.chapters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.chapter-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #e1ecf4;
+    display: flex;
+    flex-direction: column;
+}
+
+.chapter-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(44, 90, 160, 0.15);
+    border-color: #2c5aa0;
+}
+
+.chapter-header-card {
+    padding: 20px 25px;
+    background: linear-gradient(135deg, #f8fafc 0%, #eef5ff 100%);
+    border-bottom: 3px solid #2c5aa0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.chapter-icon {
+    font-size: 2.5rem;
+}
+
+.chapter-title-card {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a3c6e;
+    margin: 0;
+}
+
+.chapter-body {
+    padding: 25px;
+    flex: 1;
+}
+
+.chapter-description {
+    color: #4a5c6e;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.chapter-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.topic-tag {
+    background: #eef5ff;
+    color: #2c5aa0;
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.chapter-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #c2d9f0;
+}
+
+.chapter-resource-count {
+    display: flex;
+    gap: 10px;
+    color: #4a6fa5;
+    font-size: 0.85rem;
+}
+
+.chapter-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #2c5aa0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.chapter-link:hover {
+    background: #1a3c6e;
+    transform: scale(1.05);
+}
+
+/* راهنمای استفاده */
+.guide-section {
+    background: linear-gradient(135deg, #f8fafc 0%, #eef5ff 100%);
+    border-radius: 30px;
+    padding: 40px;
+    margin: 50px 0;
+    border: 1px solid #c2d9f0;
+}
+
+.guide-title {
+    color: #1a3c6e;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.guide-item {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+}
+
+.guide-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.guide-item h4 {
+    color: #2c5aa0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.guide-item p {
+    color: #4a5c6e;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* دکمه بازگشت به کتاب */
+.back-to-book {
+    text-align: center;
+    margin: 50px 0 20px;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #1a3c6e;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+}
+
+.back-button:hover {
+    background: white;
+    color: #1a3c6e;
+    border-color: #1a3c6e;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .library-title {
+        font-size: 2rem;
+    }
+    
+    .chapters-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="library-index" dir="rtl">
+
+<!-- هدر اصلی -->
+<div class="library-header">
+    <div class="library-title">📚 کتابخانه کیهانی</div>
+    <div class="library-subtitle">
+        مرجع جامع ویدیوها، مستندها، مقالات، آزمون‌ها و بازی‌های تعاملی<br />
+        همراه با سفر شگفت‌انگیز کتاب «ماجرای کیهان»
+    </div>
+</div>
+
+<!-- آمار کل -->
+<div class="stats-container">
+    <div class="stat-card">
+        <div class="stat-number">۶</div>
+        <div class="stat-label">فصل آموزشی</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">۶۵+</div>
+        <div class="stat-label">ویدیو</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">۲۰+</div>
+        <div class="stat-label">ابزار تعاملی</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">۲۵+</div>
+        <div class="stat-label">مقاله و وبسایت</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number">۱۵+</div>
+        <div class="stat-label">مستند</div>
+    </div>
+</div>
+
+<!-- شبکه فصل‌ها -->
+<div class="chapters-grid">
+    
+    <!-- فصل ۱: بیگ‌بنگ -->
+    <div class="chapter-card">
+        <div class="chapter-header-card">
+            <span class="chapter-icon">💥</span>
+            <h3 class="chapter-title-card">فصل ۱: بیگ‌بنگ</h3>
+        </div>
+        <div class="chapter-body">
+            <div class="chapter-description">
+                پیدایش جهان، نخستین سه دقیقه، پس‌زمینه مایکروویو کیهانی، شواهد انبساط و آغاز همه چیز.
+            </div>
+            <div class="chapter-topics">
+                <span class="topic-tag">💥 مهبانگ</span>
+                <span class="topic-tag">🌡️ CMB</span>
+                <span class="topic-tag">⏱️ آنتروپی</span>
+                <span class="topic-tag">🔭 هاوکینگ</span>
+            </div>
+            <div class="chapter-stats">
+                <div class="chapter-resource-count">
+                    <span>📺 ۱۷</span>
+                    <span>🌐 ۳</span>
+                    <span>📚 ۸+</span>
+                </div>
+                <a href="/books/cosmoverse/cosmic_library/1-The-Big-Bang-History_cosmic_library" class="chapter-link">
+                    ورود به کتابخانه ←
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- فصل ۲: قانون هابل-لومتر -->
+    <div class="chapter-card">
+        <div class="chapter-header-card">
+            <span class="chapter-icon">🔭</span>
+            <h3 class="chapter-title-card">فصل ۲: قانون هابل-لومتر</h3>
+        </div>
+        <div class="chapter-body">
+            <div class="chapter-description">
+                مقیاس جهان، انبساط کیهان، ثابت هابل، کشف کهکشان‌های دور و آدرس کیهانی ما.
+            </div>
+            <div class="chapter-topics">
+                <span class="topic-tag">📏 مقیاس</span>
+                <span class="topic-tag">📈 ثابت هابل</span>
+                <span class="topic-tag">🌌 انبساط</span>
+                <span class="topic-tag">🛰️ تلسکوپ هابل</span>
+            </div>
+            <div class="chapter-stats">
+                <div class="chapter-resource-count">
+                    <span>📺 ۹</span>
+                    <span>🎮 ۱</span>
+                    <span>📚 ۱۱+</span>
+                </div>
+                <a href="/books/cosmoverse/cosmic_library/2-Hubble-Lemaitre-law_cosmic_library" class="chapter-link">
+                    ورود به کتابخانه ←
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- فصل ۳: سرخ‌گرایی کیهانی -->
+    <div class="chapter-card">
+        <div class="chapter-header-card">
+            <span class="chapter-icon">🔴</span>
+            <h3 class="chapter-title-card">فصل ۳: سرخ‌گرایی کیهانی</h3>
+        </div>
+        <div class="chapter-body">
+            <div class="chapter-description">
+                اثر داپلر، انتقال به سرخ، طیف‌بینی، شواهد انبساط و ردشیفت کیهانی.
+            </div>
+            <div class="chapter-topics">
+                <span class="topic-tag">🚑 اثر داپلر</span>
+                <span class="topic-tag">🔴 ردشیفت</span>
+                <span class="topic-tag">🌈 طیف‌بینی</span>
+                <span class="topic-tag">⚛️ نور</span>
+            </div>
+            <div class="chapter-stats">
+                <div class="chapter-resource-count">
+                    <span>📺 ۱۱</span>
+                    <span>🎮 ۳</span>
+                    <span>📚 ۶+</span>
+                </div>
+                <a href="/books/cosmoverse/cosmic_library/3-Cosmic-Redshift_cosmic_library" class="chapter-link">
+                    ورود به کتابخانه ←
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- فصل ۴: گرانش هندسی -->
+    <div class="chapter-card">
+        <div class="chapter-header-card">
+            <span class="chapter-icon">🌀</span>
+            <h3 class="chapter-title-card">فصل ۴: گرانش هندسی</h3>
+        </div>
+        <div class="chapter-body">
+            <div class="chapter-description">
+                نسبیت عام، نسبیت خاص، فضا-زمان، خمیدگی فضا، عدسی گرانشی و اینشتین.
+            </div>
+            <div class="chapter-topics">
+                <span class="topic-tag">🌀 نسبیت عام</span>
+                <span class="topic-tag">⚡ نسبیت خاص</span>
+                <span class="topic-tag">⏱️ اتساع زمان</span>
+                <span class="topic-tag">🧠 اینشتین</span>
+            </div>
+            <div class="chapter-stats">
+                <div class="chapter-resource-count">
+                    <span>📺 ۱۱</span>
+                    <span>🎮 ۶</span>
+                    <span>📚 ۱۳+</span>
+                </div>
+                <a href="/books/cosmoverse/cosmic_library/4-Geometric-Gravity_cosmic_library" class="chapter-link">
+                    ورود به کتابخانه ←
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- فصل ۵: ماده تاریک -->
+    <div class="chapter-card">
+        <div class="chapter-header-card">
+            <span class="chapter-icon">🌑</span>
+            <h3 class="chapter-title-card">فصل ۵: ماده تاریک</h3>
+        </div>
+        <div class="chapter-body">
+            <div class="chapter-description">
+                جرم گمشده، عدسی گرانشی، ذرات فرضی، ۲۷٪ جهان و جستجوی ماده نامرئی.
+            </div>
+            <div class="chapter-topics">
+                <span class="topic-tag">🌑 جرم گمشده</span>
+                <span class="topic-tag">🌀 عدسی گرانشی</span>
+                <span class="topic-tag">⚛️ WIMP</span>
+                <span class="topic-tag">🔍 سرن</span>
+            </div>
+            <div class="chapter-stats">
+                <div class="chapter-resource-count">
+                    <span>📺 ۱۰</span>
+                    <span>🎮 ۵</span>
+                    <span>📚 ۱۵+</span>
+                </div>
+                <a href="/books/cosmoverse/cosmic_library/5-Dark-Matter_cosmic_library" class="chapter-link">
+                    ورود به کتابخانه ←
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- فصل ۶: انرژی تاریک -->
+    <div class="chapter-card">
+        <div class="chapter-header-card">
+            <span class="chapter-icon">⚡</span>
+            <h3 class="chapter-title-card">فصل ۶: انرژی تاریک</h3>
+        </div>
+        <div class="chapter-body">
+            <div class="chapter-description">
+                انبساط شتاب‌دار، ثابت کیهان‌شناختی، کوئینتسنس، ۶۸٪ جهان و سرنوشت نهایی.
+            </div>
+            <div class="chapter-topics">
+                <span class="topic-tag">⚡ انرژی تاریک</span>
+                <span class="topic-tag">📈 انبساط شتاب‌دار</span>
+                <span class="topic-tag">🔮 سرنوشت جهان</span>
+                <span class="topic-tag">🛰️ تلسکوپ رومن</span>
+            </div>
+            <div class="chapter-stats">
+                <div class="chapter-resource-count">
+                    <span>📺 ۱۱</span>
+                    <span>🎮 ۲</span>
+                    <span>📚 ۱۰+</span>
+                </div>
+                <a href="/books/cosmoverse/cosmic_library/6-Dark-Energy_cosmic_library" class="chapter-link">
+                    ورود به کتابخانه ←
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- راهنمای استفاده -->
+<div class="guide-section">
+    <div class="guide-title">
+        <span>🧭</span> راهنمای کتابخانه کیهانی
+    </div>
+    
+    <div class="guide-grid">
+        <div class="guide-item">
+            <div class="guide-icon">📺</div>
+            <h4>ویدیوهای آموزشی</h4>
+            <p>انیمیشن‌های کوتاه، سخنرانی‌های علمی و دوره‌های فشرده از آکادمی خان، کراش کورس، برایان کاکس، نیل دگراس تایسون و برایان گرین</p>
+        </div>
+        
+        <div class="guide-item">
+            <div class="guide-icon">🎮</div>
+            <h4>ابزارهای تعاملی</h4>
+            <p>شبیه‌سازهای عدسی گرانشی، مقیاس جهان، اتساع زمان و انتقال به سرخ - علم را با دستان خود تجربه کنید</p>
+        </div>
+        
+        <div class="guide-item">
+            <div class="guide-icon">🌐</div>
+            <h4>وبسایت‌های مرجع</h4>
+            <p>منابع معتبر از ناسا، سرن، ESA، تلسکوپ هابل و پروژه تاریخ بزرگ - به‌روز و دقیق</p>
+        </div>
+        
+        <div class="guide-item">
+            <div class="guide-icon">🎬</div>
+            <h4>مستندهای علمی</h4>
+            <p>آثار برجسته از بی‌بی‌سی، نشنال جئوگرافیک، دیسکاوری و PBS نوا درباره بزرگترین پرسش‌های کیهان</p>
+        </div>
+        
+        <div class="guide-item">
+            <div class="guide-icon">📚</div>
+            <h4>کتاب‌ها و مقالات</h4>
+            <p>آثار کلاسیک هاوکینگ، واینبرگ و منابع آنلاین رایگان برای مطالعه عمیق‌تر</p>
+        </div>
+        
+        <div class="guide-item">
+            <div class="guide-icon">❓</div>
+            <h4>آزمون‌ها و بازی‌ها</h4>
+            <p>آزمون‌های تعاملی، فلش‌کارت‌ها و بازی‌های علمی برای تثبیت یادگیری</p>
+        </div>
+    </div>
+</div>
+
+<!-- نقل قول -->
+<div style="background: #f0f7ff; border-radius: 20px; padding: 30px; margin: 40px 0; text-align: center; border-right: 5px solid #2c5aa0;">
+    <span style="font-size: 2.5rem; color: #2c5aa0;">🌌</span>
+    <p style="font-size: 1.3rem; color: #1a3c6e; font-style: italic; margin: 15px 0; max-width: 800px; margin: 15px auto;">
+        "کتابخانه کیهانی پنجره‌ای به سوی بی‌نهایت است. هر منبع، قطعه‌ای از پازل بزرگ هستی را برایت روشن می‌کند."
+    </p>
+    <p style="color: #2c5aa0; font-weight: bold;">- گروه هُماپران دانش</p>
+</div>
+
+<!-- دکمه بازگشت به کتاب -->
+<div class="back-to-book">
+    <a href="/books/cosmoverse/" class="back-button">
+        📘 بازگشت به کتاب «ماجراهای کیهان»
+    </a>
+</div>
+
+</div>
 
 </div>
                 </div>

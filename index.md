@@ -13,9 +13,9 @@ show_sidebar: false
     position: relative;
     margin: -1.5rem -1.5rem 2rem -1.5rem;
     padding: 5rem 2rem;
-    background: linear-gradient(145deg, #0B0C1A 0%, #1A1F35 100%);
+    background: linear-gradient(145deg, #0B0C1A 0%, #402b3f 100%);
     overflow: hidden;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 150px 50px 50px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
   }
   
@@ -29,7 +29,7 @@ show_sidebar: false
     bottom: 0;
     background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="1" fill="rgba(255,255,255,0.2)"/><circle cx="25" cy="15" r="1.2" fill="rgba(255,255,255,0.3)"/><circle cx="45" cy="35" r="0.8" fill="rgba(255,255,255,0.15)"/><circle cx="15" cy="45" r="1.5" fill="rgba(255,255,255,0.25)"/><circle cx="52" cy="12" r="1" fill="rgba(255,255,255,0.2)"/></svg>');
     opacity: 0.1;
-    animation: twinkle 8s ease-in-out infinite alternate;
+    animation: twinkle 0.5s ease-in-out infinite alternate;
   }
   
   /* گرادیانت متحرک */
@@ -512,9 +512,14 @@ show_sidebar: false
   <div class="hero-content">
     
     <!-- آیکون و نام برند -->
-    <div class="hero-brand">
+    <!-- <div class="hero-brand">
       <span class="hero-icon">🪐</span>
       <h1 class="hero-title">هُماپران دانش</h1>
+    </div> -->
+
+    <div class="hero-brand">
+    <img src="/img/final_logo_homaparan.png" alt="هُماپران دانش" style="height: 60px; width: auto; filter: drop-shadow(0 0 20px rgba(102, 126, 234, 0.5));">
+    <h1 class="hero-title">هُماپران دانش</h1>
     </div>
     
     <!-- شعار اصلی -->
@@ -631,8 +636,8 @@ show_sidebar: false
   
   <!-- سحر محمدی -->
   <div class="member-card">
-    <img src="img/sahar.png" alt="سحر محمدی" class="member-image">
-    <h3 class="member-name">سحر محمدی</h3>
+    <img src="img/sahar.png" alt="دکتر سحر محمدی" class="member-image">
+    <h3 class="member-name">دکتر سحر محمدی</h3>
     <div class="member-role">محقق کیهان‌شناسی</div>
     <!-- <a href="mailto:sahar.mohammadi7799@gmail.com" class="member-email">
       sahar.mohammadi7799@gmail.com
@@ -644,9 +649,9 @@ show_sidebar: false
   
   <!-- ابراهیم یوسفی -->
   <div class="member-card">
-    <img src="img/ebrahim.png" alt="ابراهیم یوسفی" class="member-image"
+    <img src="img/ebrahim.png" alt="دکتر ابراهیم یوسفی" class="member-image"
         style="object-fit: contain; background-color: #fcfeff; padding: 0.01px;">
-    <h3 class="member-name">ابراهیم یوسفی</h3>
+    <h3 class="member-name">دکتر ابراهیم یوسفی</h3>
     <div class="member-role">مدرس و مترجم</div>
     <a href="mailto:eyph2009@gmail.com" class="member-email">
       eyph2009@gmail.com
@@ -655,9 +660,9 @@ show_sidebar: false
   
   <!-- علیرضا طالبیان -->
   <div class="member-card">
-    <img src="img/alireza.png" alt="علیرضا طالبیان" class="member-image">
-    <h3 class="member-name">علیرضا طالبیان</h3>
-    <div class="member-role">پژوهشگر پسادکتری</div>
+    <img src="img/alireza.png" alt="دکتر علیرضا طالبیان" class="member-image">
+    <h3 class="member-name">دکتر علیرضا طالبیان</h3>
+    <div class="member-role">پژوهشگر و استاد دانشگاه </div>
     <a href="mailto:talebian@ipm.ir" class="member-email">
       talebian@ipm.ir
     </a>
@@ -670,3 +675,4 @@ show_sidebar: false
     مشاهده همه اعضا ←
   </a>
 </div>
+

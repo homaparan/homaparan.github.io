@@ -294,7 +294,7 @@ hero_image: ../../img/cmb.jpg
 
 <!-- هدر فصل -->
 <div class="chapter-header">
-    <div class="chapter-title">📡 فصل اول: بیگ‌بنگ</div>
+    <div class="chapter-title">📡 فصل اول: تاریخچه کیهان</div>
     <div class="chapter-subtitle">آغاز همه چیز | پیدایش جهان | نخستین سه دقیقه</div>
     <div style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
         <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">📺 ۱۷ ویدیو</span>
@@ -740,6 +740,33 @@ hero_image: ../../img/cmb.jpg
         </div>
     </div>
 </div>
+
+<!-- نقل قول -->
+<div style="background: linear-gradient(135deg, #0a1a2f 0%, #1a3c6e 100%); border-radius: 16px; padding: 30px; margin: 30px 0; text-align: center; border: 1px solid #4a6fa5;">
+    <span style="font-size: 2.5rem; color: white;">🌀</span>
+    <p style="font-size: 1.3rem; color: white; font-style: italic; margin: 15px 0;">
+        "ما نه تنها در جهان جای داریم، بلکه بخشی از جهان هستیم. جهان از طریق ما به خودآگاهی می‌رسد."
+    </p>
+    <p style="color: #a0c0e0; font-weight: bold;">- جان آرچیبالد ویلر، فیزیکدان</p>
+</div>
+
+<!-- نقل قول -->
+<div style="background: linear-gradient(135deg, #0a1a2f 0%, #1a3c6e 100%); border-radius: 16px; padding: 30px; margin: 30px 0; text-align: center; border: 1px solid #4a6fa5;">
+    <span style="font-size: 2.5rem; color: white;">💫</span>
+    <p style="font-size: 1.3rem; color: white; font-style: italic; margin: 15px 0;">
+        "ما از ماده ستارگان ساخته شده‌ایم. ما راهی هستیم برای کیهان تا خود را بشناسد."
+    </p>
+    <p style="color: #a0c0e0; font-weight: bold;">- کارل سیگان، اخترفیزیکدان و مروج علم</p>
+</div>
+
+<!-- نقل قول -->
+<!-- <div style="background: linear-gradient(135deg, #0a1a2f 0%, #1a3c6e 100%); border-radius: 16px; padding: 30px; margin: 30px 0; text-align: center; border: 1px solid #4a6fa5;">
+    <span style="font-size: 2.5rem; color: white;">💥</span>
+    <p style="font-size: 1.3rem; color: white; font-style: italic; margin: 15px 0;">
+        "در آغاز، هیچ‌چیز نبود. ناگهان، جهانی شد."
+    </p>
+    <p style="color: #a0c0e0; font-weight: bold;">- دیوید کریستین، بنیانگذار پروژه تاریخ بزرگ</p>
+</div> -->
 
 <!-- نکات استفاده -->
 <div style="background: #fff9e6; border-radius: 16px; padding: 25px; margin-top: 30px; border-right: 5px solid #ffc107;">

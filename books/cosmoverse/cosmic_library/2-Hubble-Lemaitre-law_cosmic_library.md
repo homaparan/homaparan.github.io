@@ -800,6 +800,15 @@ hero_image: ../../img/cmb.jpg
     </div>
 </div>
 
+<!-- نقل قول -->
+<div style="background: linear-gradient(135deg, #1a2e4f 0%, #2c3e6e 100%); border-radius: 16px; padding: 30px; margin: 30px 0; text-align: center; border: 1px solid #5a7a9a;">
+    <span style="font-size: 2.5rem; color: white;">🔭</span>
+    <p style="font-size: 1.3rem; color: white; font-style: italic; margin: 15px 0;">
+        "کهکشان‌ها در حال فرار از ما هستند؛ اما ما مرکز جهان نیستیم، هر نقطه‌ای مرکز انبساط است."
+    </p>
+    <p style="color: #b0c0d0; font-weight: bold;">- ادوین هابل، ستاره‌شناس آمریکایی</p>
+</div>
+
 <!-- نکات استفاده -->
 <div style="background: #fff9e6; border-radius: 16px; padding: 25px; margin-top: 30px; border-right: 5px solid #ffc107;">
     <h3 style="color: #856404; display: flex; align-items: center; gap: 10px;">

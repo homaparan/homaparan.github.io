@@ -269,12 +269,44 @@ hero_image: ../../img/cmb.jpg
 <!-- هدر فصل -->
 <div class="chapter-header">
     <div class="chapter-title">⚡ فصل ششم: انرژی تاریک</div>
-    <div class="chapter-subtitle">انبساط شتاب‌دار | ثابت کیهان‌شناختی | کوئینتسنس | ۶۸٪ جهان</div>
+    <div class="chapter-subtitle">انبساط شتاب‌دار | ثابت کیهان‌شناختی</div>
     <div style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
         <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">📺 ۱۱ ویدیو</span>
         <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">🎮 ۲ تعاملی</span>
         <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">🌐 ۷ وبسایت</span>
         <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">📚 ۱ کتاب</span>
+    </div>
+</div>
+
+
+<!-- اینفوگرافیک ترکیب جهان - فصل ۶ (انرژی تاریک) -->
+<div style="background: linear-gradient(135deg, #1a2a44 0%, #0f1a2f 100%); border-radius: 20px; padding: 30px; margin: 30px 0; text-align: center; color: white; border: 1px solid #4a6b9f;">
+    <h3 style="color: white; font-size: 1.8rem; margin-bottom: 20px;">⚡ ترکیب جهان: انرژی تاریک</h3>
+    
+    <!-- نمودار اصلی -->
+    <div style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; margin-bottom: 30px;">
+        <!-- انرژی تاریک (۶۸٪) - برجسته‌تر -->
+        <div style="text-align: center;">
+            <div style="width: 160px; height: 160px; border-radius: 50%; background: linear-gradient(135deg, #4a6b9f 0%, #2c4a7a 100%); margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; font-weight: bold; color: white; border: 3px solid #ffd966; box-shadow: 0 0 30px #ffd966;">۶۸٪</div>
+            <p style="margin-top: 15px; font-weight: bold; color: #ffd966;">⚡ انرژی تاریک</p>
+        </div>
+        
+        <!-- ماده تاریک (۲۷٪) -->
+        <div style="text-align: center;">
+            <div style="width: 100px; height: 100px; border-radius: 50%; background: #2c3e5c; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; color: white; box-shadow: 0 8px 15px rgba(0,0,0,0.3);">۲۷٪</div>
+            <p style="margin-top: 15px; font-weight: bold; color: #a0c0ff;">ماده تاریک</p>
+        </div>
+        
+        <!-- ماده معمولی (۵٪) -->
+        <div style="text-align: center;">
+            <div style="width: 80px; height: 80px; border-radius: 50%; background: #5a7ea0; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; color: white; box-shadow: 0 8px 15px rgba(0,0,0,0.3);">۵٪</div>
+            <p style="margin-top: 15px; font-weight: bold; color: #a0c0ff;">ماده معمولی</p>
+        </div>
+    </div>
+    
+    <!-- توضیح تکمیلی -->
+    <div style="margin-top: 25px; padding: 15px; background: rgba(74, 107, 159, 0.3); border-radius: 12px; font-size: 0.95rem; color: #ffd966;">
+        <span style="font-weight: bold;">⚡ واقعیت شگفت‌انگیز:</span> انرژی تاریک نیروی اسرارآمیزی است که باعث انبساط شتاب‌دار جهان می‌شود. حدود ۶۸٪ از جهان از این انرژی ناشناخته تشکیل شده است!
     </div>
 </div>
 
@@ -607,24 +639,6 @@ hero_image: ../../img/cmb.jpg
     <p style="color: #a0b8d0; font-weight: bold;">- آدام ریس، برنده جایزه نوبل فیزیک ۲۰۱۱</p>
 </div>
 
-<!-- اینفوگرافیک ترکیب جهان -->
-<div style="background: linear-gradient(135deg, #1a2a44 0%, #0f1a2f 100%); border-radius: 20px; padding: 30px; margin: 30px 0; text-align: center; color: white;">
-    <h3 style="color: white; font-size: 1.8rem; margin-bottom: 20px;">🌍 ترکیب جهان</h3>
-    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-        <div style="text-align: center;">
-            <div style="width: 100px; height: 100px; border-radius: 50%; background: #4a6b9f; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; color: white;">۶۸٪</div>
-            <p style="margin-top: 10px; font-weight: bold;">انرژی تاریک</p>
-        </div>
-        <div style="text-align: center;">
-            <div style="width: 100px; height: 100px; border-radius: 50%; background: #2c3e5c; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; color: white;">۲۷٪</div>
-            <p style="margin-top: 10px; font-weight: bold;">ماده تاریک</p>
-        </div>
-        <div style="text-align: center;">
-            <div style="width: 100px; height: 100px; border-radius: 50%; background: #5a7ea0; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; color: white;">۵٪</div>
-            <p style="margin-top: 10px; font-weight: bold;">ماده معمولی</p>
-        </div>
-    </div>
-</div>
 
 <!-- نکات استفاده -->
 <div style="background: #e6ecf8; border-radius: 16px; padding: 25px; margin-top: 30px; border-right: 5px solid #4a6b9f;">

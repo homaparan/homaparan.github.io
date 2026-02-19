@@ -234,6 +234,122 @@
     white-space: nowrap;
 }
 
+/* بخش ویدیوی ویژه */
+.featured-video {
+    background: linear-gradient(135deg, #f5f5fa 0%, #eaeaf5 100%);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px 0;
+    border: 2px solid #4a4a6a;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-video::before {
+    content: "🌌";
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 60px;
+    opacity: 0.1;
+}
+
+.featured-title {
+    color: #1a1a2e;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.featured-description {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin: 15px 0;
+    border-right: 4px solid #ffc107;
+}
+
+.featured-quote {
+    font-style: italic;
+    color: #4a4a6a;
+    margin: 15px 0;
+    padding-right: 20px;
+    border-right: 3px solid #4a4a6a;
+}
+
+.featured-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #4a4a6a;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all 0.2s;
+}
+
+.featured-link:hover {
+    background: #2c2c44;
+    transform: scale(1.05);
+}
+
+/* بخش تصاویر ویژه */
+.image-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.image-card {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid #e1ecf4;
+    text-align: center;
+}
+
+.image-card img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #e1ecf4;
+}
+
+.image-card .image-caption {
+    color: #4a4a6a;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.image-card .image-credit {
+    color: #6c757d;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.image-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1a1a2e;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.image-link:hover {
+    text-decoration: underline;
+}
+
 /* بخش‌های ویژه */
 .special-section {
     background: linear-gradient(135deg, #f5f5fa 0%, #eaeaf5 100%);
@@ -276,6 +392,84 @@
     line-height: 1.8;
 }
 
+/* کارت تعاملی ویژه */
+.interactive-card {
+    background: linear-gradient(135deg, #2c2c44 0%, #1a1a2e 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.interactive-card a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.interactive-card:hover {
+    transform: scale(1.02);
+}
+
+/* کارت آشپزخانه کیهان */
+.kitchen-card {
+    background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+    color: #1a1a2e;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.kitchen-card a {
+    color: #1a1a2e;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.kitchen-card:hover {
+    transform: scale(1.02);
+}
+
+.kitchen-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    color: #1a1a2e;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+}
+
+.kitchen-link:hover {
+    background: #1a1a2e;
+    color: white;
+    border-color: white;
+}
+
+/* کارت کمیک */
+.comic-card {
+    background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+    color: #1a1a2e;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.comic-card a {
+    color: #1a1a2e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /* دکمه بازگشت */
 .back-button {
     display: inline-block;
@@ -314,42 +508,6 @@
     gap: 5px;
 }
 
-/* کارت تعاملی ویژه */
-.interactive-card {
-    background: linear-gradient(135deg, #2c2c44 0%, #1a1a2e 100%);
-    color: white;
-    padding: 25px;
-    border-radius: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.interactive-card a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.3rem;
-}
-
-.interactive-card:hover {
-    transform: scale(1.02);
-}
-
-/* کارت کمیک */
-.comic-card {
-    background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
-    color: #1a1a2e;
-    padding: 20px;
-    border-radius: 16px;
-    text-align: center;
-}
-
-.comic-card a {
-    color: #1a1a2e;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 /* ریسپانسیو */
 @media (max-width: 768px) {
     .resources-grid {
@@ -386,6 +544,47 @@
     <span class="stat-item">⏱ مناسب برای: ۷ ساعت آموزش</span>
     <span class="stat-item">🎯 سطح: متوسط تا پیشرفته</span>
     <span class="stat-item">🌑 کشف: ۱۹۳۳ - فریتز زوئیکی</span>
+</div>
+
+<!-- تصاویر ویژه -->
+<div class="content-section">
+    <div class="section-title">
+        🖼️ تصاویر نجومی <span>۳ تصویر</span>
+    </div>
+    
+    <div class="image-showcase">
+        <!-- تصویر زمین در شب -->
+        <div class="image-card">
+            <a href="https://viirsland.gsfc.nasa.gov/images/BlackMarble_2016_3km.jpg" target="_blank">
+                <img src="https://viirsland.gsfc.nasa.gov/images/BlackMarble_2016_3km.jpg" alt="زمین در شب - ناسا ۲۰۱۷" style="width: 100%; border-radius: 12px;" onerror="this.src='../../img/earth-at-night.jpg'; this.onerror=null;" />
+            </a>
+            <div class="image-caption">
+                <strong>🌍 زمین در شب، ۲۰۱۷</strong>
+            </div>
+            <div class="image-credit">
+                این تصویر با استفاده از الگوریتم VIIRS DNB ناسا تولید شده است.
+            </div>
+            <a href="https://viirsland.gsfc.nasa.gov/images/BlackMarble_2016_3km.jpg" class="image-link" target="_blank">
+                🔍 مشاهده تصویر با کیفیت ۳ کیلومتر
+            </a>
+        </div>
+        
+        <!-- تصویر خوشه کما -->
+        <div class="image-card">
+            <a href="https://upload.wikimedia.org/wikipedia/commons/2/2e/The_Coma_Galaxy_Cluster_as_seen_by_Hubble_Heic0813a.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/The_Coma_Galaxy_Cluster_as_seen_by_Hubble_Heic0813a.jpg/800px-The_Coma_Galaxy_Cluster_as_seen_by_Hubble_Heic0813a.jpg" alt="خوشه کهکشانی کما" style="width: 100%; border-radius: 12px;" />
+            </a>
+            <div class="image-caption">
+                <strong>خوشه کهکشانی کما (Coma Cluster)</strong>
+            </div>
+            <div class="image-credit">
+                این خوشه کروی با بیش از ۲۰ میلیون سال نوری قطر، شامل هزاران کهکشان است. اعتبار: NASA, ESA, and the Hubble Heritage Team (STScI/AURA)
+            </div>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/2/2e/The_Coma_Galaxy_Cluster_as_seen_by_Hubble_Heic0813a.jpg" class="image-link" target="_blank">
+                🔍 مشاهده تصویر با کیفیت اصلی
+            </a>
+        </div>
+    </div>
 </div>
 
 <!-- 📺 ویدیوها -->
@@ -591,6 +790,43 @@
     </div>
 </div>
 
+<!-- 🧪 آشپزخانه کیهان: فعالیت عملی عدسی گرانشی -->
+<div class="kitchen-card">
+    <div style="font-size: 3rem; margin-bottom: 10px;">🧪</div>
+    <h2 style="color: #1a1a2e; margin-bottom: 20px;">آشپزخانه کیهان: فعالیت عملی</h2>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center; justify-content: center; margin: 30px 0;">
+        <!-- تصویر اثر عدسی گرانشی -->
+        <div style="flex: 1; min-width: 250px;">
+            <img src="../../img/gravitational-lensing.jpg" alt="اثر عدسی گرانشی" style="width: 100%; max-width: 350px; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); border: 3px solid white;" onerror="this.src='../../img/lensing-placeholder.jpg'; this.onerror=null;" />
+            <p style="margin-top: 10px; color: #1a1a2e; font-size: 0.9rem;">
+                <strong>اثر عدسی گرانشی</strong><br />
+                اعتبار: NASA
+            </p>
+        </div>
+        
+        <div style="flex: 2; min-width: 250px;">
+            <p style="font-size: 1.1rem; line-height: 1.8; color: #1a1a2e;">
+                ماده تاریک را نمی‌توان مستقیماً دید، اما با اثر عدسی گرانشی می‌توانیم حضور آن را تشخیص دهیم. در این فعالیت، با پدیده خمیدگی نور در میدان گرانشی آشنا می‌شوید.
+            </p>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 25px;">
+                <a href="https://nasa.tumblr.com/post/187009797389/how-gravity-warps-light" class="kitchen-link" target="_blank">
+                    🌀 چگونه گرانش نور را خم می‌کند؟
+                </a>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.5); border-radius: 12px; padding: 15px; margin-top: 20px;">
+                <p style="color: #1a1a2e; margin: 0; font-size: 0.95rem;">
+                    <strong>📝 توضیح:</strong>
+                    <br />
+                    عدسی گرانشی یکی از مهم‌ترین شواهد وجود ماده تاریک است. نور کهکشان‌های دوردست هنگام عبور از کنار توده‌های ماده تاریک، خمیده شده و تصاویر متعددی از آن کهکشان ایجاد می‌کند. این پدیده به اخترشناسان اجازه می‌دهد جرم ماده تاریک را اندازه‌گیری کنند.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- 🎬 مستندها -->
 <div class="content-section">
     <div class="section-title">
@@ -720,49 +956,8 @@
         </div>
         
         <div class="category-card">
-            <div class="category-title">
-                <span>🎬</span> مستندهای جذاب
-            </div>
-            <div class="category-items">
-                ۵ مستند از BBC، دیسکاوری<br />
-                کاوش در اسرار ماده تاریک
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- نقل قول -->
-<div style="background: #1a1a2e; border-radius: 16px; padding: 30px; margin: 30px 0; text-align: center; border: 1px solid #4a4a6a;">
-    <span style="font-size: 2.5rem; color: white;">🌑</span>
-    <p style="font-size: 1.3rem; color: white; font-style: italic; margin: 15px 0;">
-        "ما از پنج درصد جهان می‌فهمیم و به آن ماده معمولی می‌گوییم. 
-        نود و پنج درصد دیگر هنوز یک راز است."
-    </p>
-    <p style="color: #a0a0c0; font-weight: bold;">- فرانسیسکا زولو، اخترفیزیک‌دان</p>
-</div>
-
-<!-- نکات استفاده -->
-<div style="background: #f5f5fa; border-radius: 16px; padding: 25px; margin-top: 30px; border-right: 5px solid #4a4a6a;">
-    <h3 style="color: #1a1a2e; display: flex; align-items: center; gap: 10px;">
-        <span>💡</span> نکات استفاده
-    </h3>
-    <ul style="color: #1a1a2e; line-height: 1.8; padding-right: 20px;">
-        <li>منابع به تفکیک مفاهیم پایه و تحقیقات پیشرفته دسته‌بندی شده‌اند</li>
-        <li>مناسب برای آموزش یکی از بزرگترین اسرار کیهانشناسی مدرن</li>
-        <li>شبیه‌ساز عدسی گرانشی را حتماً تجربه کنید - درک بصری عالی از ماده تاریک می‌دهد</li>
-        <li>کمیک دکتری نگاه طنزآمیزی به چالش‌های تحقیق دارد</li>
-        <li>مستند BBC "بیشتر جهان ما گمشده است" یک کلاسیک است</li>
-    </ul>
-</div>
-
-<!-- دکمه بازگشت -->
-<div style="text-align: center; margin-top: 40px;">
-    <a href="/books/cosmoverse/cosmic_library/main_cosmic_library" class="back-button">
-        ← بازگشت به کتابخانه کیهانی
-    </a>
-</div>
-
-</div>
+            &lt;div
+</div></div></div></div>
 
 </div>
                 </div>

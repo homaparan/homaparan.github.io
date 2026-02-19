@@ -3,7 +3,7 @@ layout: page
 title: کتابخانه کیهانی - فصل دوم
 subtitle: قانون هابل-لومتر | مقیاس جهان | انبساط کیهان
 show_sidebar: false
-# hero_image: ../../img/cmb.jpg
+hero_image: ../../img/cmb.jpg
 ---
 
 <style>
@@ -130,6 +130,142 @@ show_sidebar: false
     white-space: nowrap;
 }
 
+/* بخش ویدیوی ویژه */
+.featured-video {
+    background: linear-gradient(135deg, #f8fafc 0%, #eef5ff 100%);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px 0;
+    border: 2px solid #2c5aa0;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-video::before {
+    content: "🚀";
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 60px;
+    opacity: 0.1;
+}
+
+.featured-title {
+    color: #1a3c6e;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.featured-description {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin: 15px 0;
+    border-right: 4px solid #ffc107;
+}
+
+.featured-quote {
+    font-style: italic;
+    color: #4a6fa5;
+    margin: 15px 0;
+    padding-right: 20px;
+    border-right: 3px solid #2c5aa0;
+}
+
+.featured-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #2c5aa0;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all 0.2s;
+}
+
+.featured-link:hover {
+    background: #1a3c6e;
+    transform: scale(1.05);
+}
+
+/* بخش تصاویر ویژه */
+.image-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.image-card {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid #e1ecf4;
+    text-align: center;
+}
+
+.image-card img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #e1ecf4;
+}
+
+.image-card .image-caption {
+    color: #4a6fa5;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.image-card .image-credit {
+    color: #6c757d;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.image-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2c5aa0;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.image-link:hover {
+    text-decoration: underline;
+}
+
+/* کارت تعاملی ویژه */
+.interactive-card {
+    background: linear-gradient(135deg, #2c5aa0 0%, #1a3c6e 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.interactive-card a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.interactive-card:hover {
+    transform: scale(1.02);
+}
+
 /* بخش‌های ویژه */
 .special-section {
     background: linear-gradient(135deg, #f8fafc 0%, #eef5ff 100%);
@@ -210,26 +346,6 @@ show_sidebar: false
     gap: 5px;
 }
 
-/* کارت تعاملی ویژه */
-.interactive-card {
-    background: linear-gradient(135deg, #ffd166 0%, #ffb347 100%);
-    color: #1a3c6e;
-    padding: 25px;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.interactive-card a {
-    color: #1a3c6e;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.3rem;
-}
-
-.interactive-card:hover {
-    transform: scale(1.02);
-}
-
 /* ریسپانسیو */
 @media (max-width: 768px) {
     .resources-grid {
@@ -266,6 +382,97 @@ show_sidebar: false
     <span class="stat-item">⏱ مناسب برای: ۴ ساعت آموزش</span>
     <span class="stat-item">🎯 سطح: مبتدی تا متوسط</span>
     <span class="stat-item">🔭 کشف: ۱۹۲۹ - ادوین هابل</span>
+</div>
+
+<!-- ویدیوی ویژه: آدرس کیهانی ما -->
+<div class="featured-video">
+    <div class="featured-title">
+        <span>🚀</span> ویدیوی ویژه: آدرس کیهانی ما
+    </div>
+    
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+            <img src="../../img/cosmic-address.jpg" alt="آدرس کیهانی ما" style="width: 100%; max-width: 300px; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);" onerror="this.style.display='none'">
+        </div>
+        <div style="flex: 2;">
+            <div class="featured-description">
+                <strong>🎓 عرشه رصدی سفینه تخیل:</strong>
+                <p style="margin-top: 10px; color: #1a3c6e;">
+                    "عرشه رصدی عظیم سفینه تخیل، جهان را با تمام شکوهش به نمایش گذاشته است. 
+                    کوارک در سکوی هدایت ایستاده و مشتاق است دانش‌آموزان را به سفری فراتر از ستاره‌های آشنا ببرد."
+                </p>
+            </div>
+            
+            <div class="featured-quote">
+                <p>🌟 می‌توانید نرم‌افزار رایگان استلاریوم را دانلود کنید که به شما امکان می‌دهد آزادانه در جهان سفر کنید یا این ویدیو را تماشا کنید:</p>
+            </div>
+            
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="https://stellarium.org/" class="featured-link" target="_blank">
+                    🌌 دانلود نرم‌افزار استلاریوم
+                    <span style="font-size: 1.2rem;">←</span>
+                </a>
+                
+                <a href="https://www.youtube.com/watch?v=D4MdwK0Dp5g" class="featured-link" style="background: #ff8c00;" target="_blank">
+                    🎬 تماشای ویدیوی آدرس کیهانی
+                    <span style="font-size: 1.2rem;">←</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- تصاویر ویژه -->
+<div class="content-section">
+    <div class="section-title">
+        🖼️ تصاویر آموزشی <span>۲ تصویر</span>
+    </div>
+    
+    <div class="image-showcase">
+        <!-- تصویر موقعیت زمین -->
+        <div class="image-card">
+            <a href="https://upload.wikimedia.org/wikipedia/commons/8/83/Location_of_Earth_(9x1-English_Annot).jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Location_of_Earth_(9x1-English_Annot).jpg/800px-Location_of_Earth_(9x1-English_Annot).jpg" 
+                     alt="موقعیت زمین در جهان" 
+                     style="width: 100%; border-radius: 12px;">
+            </a>
+            <div class="image-caption">
+                <strong>موقعیت زمین در جهان</strong>
+            </div>
+            <div class="image-credit">
+                شامل ۹ قاب متوالی: زمین، منظومه شمسی درونی، منظومه شمسی بیرونی، ستاره‌های نزدیک، کهکشان راه شیری، گروه محلی، ابرخوشه‌های محلی، لانیاکیا و جهان قابل مشاهده
+            </div>
+            <div class="image-credit">
+                اعتبار: Andrew Z. Colvin
+            </div>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/8/83/Location_of_Earth_(9x1-English_Annot).jpg" class="image-link" target="_blank">
+                🔍 مشاهده تصویر با کیفیت اصلی
+            </a>
+        </div>
+        
+        <!-- تصویر نمودار هابل -->
+        <div class="image-card">
+            <a href="https://commons.wikimedia.org/wiki/File:HubbleTuningFork.jpg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/HubbleTuningFork.jpg/800px-HubbleTuningFork.jpg" 
+                     alt="طرح دسته‌بندی کهکشان‌های هابل" 
+                     style="width: 100%; border-radius: 12px;">
+            </a>
+            <div class="image-caption">
+                <strong>طرح دسته‌بندی کهکشان‌های هابل (چنگال هابل)</strong>
+            </div>
+            <div class="image-credit">
+                ادوین هابل، ستاره‌شناس آمریکایی، این طرح دسته‌بندی کهکشان‌ها را در سال ۱۹۲۶ ارائه کرد. اگرچه این طرح، که به نمودار چنگال هابل نیز معروف است، امروزه تا حدودی ساده‌انگارانه تلقی می‌شود، اما اصول اولیه آن همچنان معتبر است.
+            </div>
+            <div style="direction: ltr; text-align: left; margin-top: 10px; font-family: monospace;">
+                <strong>E0 E3 E5 E7 S0</strong><br>
+                <strong>Sa Sb Sc</strong><br>
+                <strong>SBa SBb SBc</strong>
+            </div>
+            <a href="https://commons.wikimedia.org/wiki/File:HubbleTuningFork.jpg" class="image-link" target="_blank">
+                🔍 مشاهده تصویر اصلی در ویکی‌مدیا
+            </a>
+        </div>
+    </div>
 </div>
 
 <!-- 📺 ویدیوها -->
@@ -359,7 +566,7 @@ show_sidebar: false
         <a href="https://htwins.net/scale2/" target="_blank">
             🌠 مقیاس جهان (The Scale of the Universe)
         </a>
-        <p style="margin-top: 15px; color: #1a3c6e; opacity: 0.9;">
+        <p style="margin-top: 15px; color: rgba(255,255,255,0.9);">
             تجربه‌ای شگفت‌انگیز از کوچک‌ترین تا بزرگ‌ترین مقیاس‌های جهان
         </p>
     </div>
@@ -567,7 +774,7 @@ show_sidebar: false
             </div>
             <div class="category-items">
                 مقیاس جهان (The Scale)<br>
-                شبیه‌ساز انبساط
+                نرم‌افزار استلاریوم
             </div>
         </div>
         
@@ -602,7 +809,9 @@ show_sidebar: false
         <li>منابع به تفکیک نوع محتوا دسته‌بندی شده‌اند</li>
         <li>مناسب برای آموزش مفاهیم مقیاس جهان و انبساط کیهانی</li>
         <li>ابزار تعاملی "مقیاس جهان" را حتماً تجربه کنید</li>
-        <li>مستند "سفر به لبه جهان" درک عمیقی از عظمت کیهان به شما می‌دهد</li>
+        <li>نرم‌افزار رایگان استلاریوم را دانلود کنید و در جهان سفر کنید</li>
+        <li>تصویر موقعیت زمین در جهان، درک عمیقی از جایگاه ما در کیهان به شما می‌دهد</li>
+        <li>نمودار چنگال هابل، طبقه‌بندی کهکشان‌ها را به زیبایی نشان می‌دهد</li>
     </ul>
 </div>
 

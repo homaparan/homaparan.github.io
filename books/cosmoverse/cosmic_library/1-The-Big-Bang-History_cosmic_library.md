@@ -1,9 +1,9 @@
 ---
 layout: page
 title: کتابخانه کیهانی - فصل اول
-subtitle: تاریخچه کیهان | آفرینش جهان
+subtitle: بیگ‌بنگ | آفرینش جهان
 show_sidebar: false
-# hero_image: ../../img/cmb.jpg
+hero_image: ../../img/cmb.jpg
 ---
 
 <style>
@@ -130,6 +130,70 @@ show_sidebar: false
     white-space: nowrap;
 }
 
+/* بخش ویدیوی ویژه */
+.featured-video {
+    background: linear-gradient(135deg, #f8fafc 0%, #eef5ff 100%);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px 0;
+    border: 2px solid #2c5aa0;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-video::before {
+    content: "🥚";
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 60px;
+    opacity: 0.1;
+}
+
+.featured-title {
+    color: #1a3c6e;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.featured-description {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin: 15px 0;
+    border-right: 4px solid #ffc107;
+}
+
+.featured-quote {
+    font-style: italic;
+    color: #4a6fa5;
+    margin: 15px 0;
+    padding-right: 20px;
+    border-right: 3px solid #2c5aa0;
+}
+
+.featured-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #2c5aa0;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all 0.2s;
+}
+
+.featured-link:hover {
+    background: #1a3c6e;
+    transform: scale(1.05);
+}
+
 /* بخش‌های ویژه */
 .special-section {
     background: linear-gradient(135deg, #f8fafc 0%, #eef5ff 100%);
@@ -230,10 +294,10 @@ show_sidebar: false
 
 <!-- هدر فصل -->
 <div class="chapter-header">
-    <div class="chapter-title">📡 فصل اول: تاریخچه کیهان</div>
+    <div class="chapter-title">📡 فصل اول: بیگ‌بنگ</div>
     <div class="chapter-subtitle">آغاز همه چیز | پیدایش جهان | نخستین سه دقیقه</div>
-    <div style="display: flex; gap: 15px; margin-top: 20px;">
-        <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">🎬 ۱۷ ویدیو</span>
+    <div style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
+        <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">📺 ۱۷ ویدیو</span>
         <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">🌐 ۳ وبسایت</span>
         <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 30px;">📚 ۶ مقاله</span>
     </div>
@@ -246,15 +310,60 @@ show_sidebar: false
     <span class="stat-item">🎯 سطح: مبتدی تا پیشرفته</span>
 </div>
 
+<!-- ویدیوی ویژه: تخم‌مرغ به هم خورده -->
+<div class="featured-video">
+    <div class="featured-title">
+        <span>🥚</span> ویدیوی ویژه کلاس درس
+    </div>
+    
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+            <img src="../../img/scrambled-egg.jpg" alt="تخم‌مرغ به هم خورده" style="width: 100%; max-width: 300px; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);" onerror="this.style.display='none'">
+        </div>
+        <div style="flex: 2;">
+            <div class="featured-description">
+                <strong>🎓 گفتگوی کلاسی:</strong>
+                <p style="margin-top: 10px;">
+                    <span style="background: #2c5aa0; color: white; padding: 3px 10px; border-radius: 20px; font-size: 0.8rem;">دبیر</span>
+                    <br>
+                    "صبح بخیر کلاس! به کلاس ماجراجویی‌های کیهانی خوش آمدید. قبل از شروع گفتگو، یک ویدیو برای شما دارم."
+                </p>
+                <p>
+                    <span style="background: #ffc107; color: #1a3c6e; padding: 3px 10px; border-radius: 20px; font-size: 0.8rem;">النا</span>
+                    <br>
+                    "چرا ما ویدیوی به هم زدن تخم‌مرغ را تماشا کردیم؟"
+                </p>
+            </div>
+            
+            <div class="featured-quote">
+                <p>📺 این بخش از
+                 <a href="https://www.ted.com/talks/david_christian_the_history_of_our_world_in_18_minutes">  سخنرانی TED دیوید کریستین درباره پروژه تاریخ بزرگ </a>
+                 گرفته شده است.</p>
+            </div>
+            
+            <a href="https://youtu.be/JUSGRkzdzQQ" class="featured-link" target="_blank">
+                🎬 تماشای ویدیوی تخم‌مرغ (انتروپی و بیگ‌بنگ)
+                <span style="font-size: 1.2rem;">←</span>
+            </a>
+        </div>
+    </div>
+    
+    <div style="margin-top: 20px; padding: 15px; background: rgba(44, 90, 160, 0.05); border-radius: 12px;">
+        <p style="color: #1a3c6e; margin: 0;">
+            <strong>💡 مفهوم ویدیو:</strong> همانطور که به هم زدن تخم‌مرغ فرآیندی برگشت‌ناپذیر است، 
+            بیگ‌بنگ نیز نقطه آغازی بود برای افزایش آنتروپی جهان. این ویدیو مفهوم آنتروپی و 
+            قانون دوم ترمودینامیک را در کیهان‌شناسی به زیبایی توضیح می‌دهد.
+        </p>
+    </div>
+</div>
+
 <!-- 📺 ویدیوها -->
 <div class="content-section">
     <div class="section-title">
         📺 ویدیوهای آموزشی <span>۱۷ منبع</span>
     </div>
     <div class="resources-grid">
-        {% assign videos = "درک آستانه‌های افزایش پیچیدگی|پس‌زمینه مایکروویو کیهانی چیست؟|آغاز همه چیز - بیگ‌بنگ|نظریه بیگ‌بنگ|آغاز جهان برای مبتدیان - تام وینتی|بیگ‌بنگ: دوره فشرده تاریخ بزرگ قسمت ۱|بیگ‌بنگ، کیهان‌شناسی قسمت ۱: دوره فشرده|تکامل جهان توضیح داده شده توسط برایان کاکس|شواهد نظریه بیگ‌بنگ|بیگ‌بنگ کجا رخ داد؟|تصویر بیگ‌بنگ (قدیمی‌ترین نور در جهان)|سوءتفاهم‌ها درباره جهان|بیگ‌بنگ: نظریه و منشأ جهان|چه چیزی از بیگ‌بنگ پدید آمد؟|برایان کاکس آنتروپی را در یک ویدیوی کوتاه توضیح می‌دهد|آنتروپی چیست؟|آنتروپی: سوءبرداشت‌شده‌ترین مفهوم در فیزیک" | split: "|" %}
-        {% assign links = "https://bhp-public.oerproject.com/chapters/1#in-the-beginning|https://www.youtube.com/watch?v=AYFDN2DSVgc|https://www.youtube.com/watch?v=wNDGgL73ihY|https://www.youtube.com/watch?v=gZDa6d93ywE|https://www.youtube.com/watch?v=DmUiCweDic4|https://www.youtube.com/watch?v=tq6be-CZJ3w|https://www.youtube.com/watch?app=desktop&v=9B7Ix2VQEGo|https://www.youtube.com/watch?v=99qnebweV3E|https://www.pbslearningmedia.org/resource/ess05.sci.ess.eiu.microwave/evidence-for-the-big-bang-theory/|https://www.youtube.com/watch?v=W4c-gX9MT1Q|https://www.youtube.com/watch?v=_mZQ-5-KYHw|https://www.youtube.com/watch?v=XBr4GkRnY0|https://www.clickview.com.au/curriculum-libraries/video-details/?id=37711980&cat=3708541&library=secondary|https://www.khanacademy.org/humanities/big-history-project/big-bang/x5d2ce072:other-materials/v/bhp-what-emerged-from-the-big-bang|https://www.youtube.com/shorts/EQ6_yCJRng4?feature=share|https://www.youtube.com/watch?v=YM-uykVfq_E|https://www.youtube.com/watch?v=DxL2HoqLbyA" | split: "|" %}
-        
+        <!-- ردیف ۱ -->
         <div class="resource-item">
             <span class="resource-icon">🎥</span>
             <a href="https://bhp-public.oerproject.com/chapters/1#in-the-beginning" class="resource-link" target="_blank">
@@ -642,6 +751,7 @@ show_sidebar: false
         <li>مناسب برای معلمان، دانش‌آموزان و علاقه‌مندان به کیهان‌شناسی</li>
         <li>برای دسترسی به منابع کافیست روی لینک کلیک کنید</li>
         <li>منابع پیشنهادی برای هر سطح مشخص شده‌اند</li>
+        <li>🥚 ویدیوی تخم‌مرغ، استعاره‌ای زیبا از قانون دوم ترمودینامیک و بیگ‌بنگ است</li>
     </ul>
 </div>
 
